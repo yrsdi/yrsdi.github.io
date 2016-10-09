@@ -12,8 +12,9 @@ untuk mendebug code scala secara online. Fitur-fiturnyapun cukup lengkap untuk k
 salah satu fiturnya adalah realtime update pada saat copy paste code, dan running code, 
 memungkinkan untuk menghapus dan cloning paste, memungkinkan untuk menentukan versi scala, 
 menyediakan beberapa template yang berguna (misalnya scalaz, Akka, bermain, scala 2.10) 
-untuk lengkapnya bisa dibaca https://github.com/OlegYch/scastie
+untuk lengkapnya bisa dibaca [https://github.com/OlegYch/scastie](https://github.com/OlegYch/scastie)
 
+<!--more-->
 Berikut cotoh screenshot hasil compilasi code scala menggunakan tool ini
 
 
