@@ -4,7 +4,7 @@ title: "Scastie - Debugging code Scala secara Online dan Kolaboratif"
 date: 2014-11-12 02:44
 comments: true
 categories: 
-- programming
+- tools
 ---
 
 [Scastie](http://scastie.org/) adalah Scala pastebin yang merupakan salah satu tool yang bisa jadi pilihan 
