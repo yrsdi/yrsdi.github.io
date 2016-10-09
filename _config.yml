@@ -9,8 +9,8 @@ kramdown:
 permalink:        /:categories/:title/
 
 # Setup
-title:            'Learn, Share and Contribute'
-tagline:          'Learn, Share and Contribute'
+title:            'From Unknown to Known'
+tagline:          'Programming, Tools and Anything'
 description:      'software development, programming language, open source technology, web development tools'
 url:              http://yrsdi.github.io
 
