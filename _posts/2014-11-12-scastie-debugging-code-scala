@@ -14,7 +14,6 @@ memungkinkan untuk menghapus dan cloning paste, memungkinkan untuk menentukan ve
 menyediakan beberapa template yang berguna (misalnya scalaz, Akka, bermain, scala 2.10) 
 untuk lengkapnya bisa dibaca https://github.com/OlegYch/scastie
 
-
 Berikut cotoh screenshot hasil compilasi code scala menggunakan tool ini
 [Scastie - Debugging Code scala Secara Online dan Kolaboratift](https://rosadiyadi.files.wordpress.com/2014/11/scastie-debugging-code-scala-secara-online-dan-kolaboratif.png)
 Menurut penjelasan pengembangnya, scastie tidak ditujukan untuk menjadi IDE Online melainkan hanya sebatas tool yang diperuntukan untuk mendebug code scala secara online dan kolaboratif, kita lihat saja perkembanyanya seperti apa kedepanya.
