@@ -8,4 +8,4 @@ footer: false
 
 ## Yadi Rosadi##
 
-Software development, programming language, open source technology, web development tools.
+Software Engineer, Blogger who passionate to learn new things, especially programming language and web development tools 
