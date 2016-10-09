@@ -9,7 +9,7 @@ kramdown:
 permalink:        /:categories/:title/
 
 # Setup
-title:            'From Unknown to Known'
+title:            'YRSDI.Blog'
 tagline:          'Programming, Tools and Anything'
 description:      'software development, programming language, open source technology, web development tools'
 url:              http://yrsdi.github.io
