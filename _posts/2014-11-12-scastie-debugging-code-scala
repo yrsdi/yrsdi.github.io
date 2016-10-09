@@ -16,8 +16,6 @@ untuk lengkapnya bisa dibaca https://github.com/OlegYch/scastie
 
 
 Berikut cotoh screenshot hasil compilasi code scala menggunakan tool ini
-
-<a href="https://rosadiyadi.files.wordpress.com/2014/11/scastie-debugging-code-scala-secara-online-dan-kolaboratif.png"><img class="alignnone wp-image-39 size-full" src="https://rosadiyadi.files.wordpress.com/2014/11/scastie-debugging-code-scala-secara-online-dan-kolaboratif.png" alt="Scastie - Debugging Code scala Secara Online dan Kolaboratif" width="663" height="532" /></a>
-
+[Scastie - Debugging Code scala Secara Online dan Kolaboratift](https://rosadiyadi.files.wordpress.com/2014/11/scastie-debugging-code-scala-secara-online-dan-kolaboratif.png)
 Menurut penjelasan pengembangnya, scastie tidak ditujukan untuk menjadi IDE Online melainkan hanya sebatas tool yang diperuntukan untuk mendebug code scala secara online dan kolaboratif, kita lihat saja perkembanyanya seperti apa kedepanya.
 
