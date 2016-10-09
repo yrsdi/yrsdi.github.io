@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Scastie - Debugging code Scala secara Online dan Kolaboratif"
+title: "Scastie - Online Tool for Debugging Scala code"
 date: 2014-11-12 02:44
 comments: true
 categories: 
