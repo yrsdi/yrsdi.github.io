@@ -1,0 +1,40 @@
+# Conversion
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Permalinks
+permalink:        /:categories/:title/
+
+# Setup
+title:            'Learn, Share and Contribute'
+tagline:          'Learn, Share and Contribute'
+description:      'software development, programming language, open source technology, web development tools'
+url:              http://yrsdi.github.io
+
+author:
+  name:           Yadi Rosadi
+  email:          yadi.rosadi@gmail.com
+  github:         yrsdi
+  twitter:        yrsdi
+  linkedin:       yadi-rosadi
+  facebook:       yadi.rosadi
+  url:            http://yrsdi.github.io
+  email_hash:     f86c35cd9b4696694b26eb96b5c825bf
+  bio:            'Software Engineer, Blogger who passionate to learn new things, especially programming language and web development tools'
+
+gems: 
+  - jekyll-paginate
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-feed
+
+paginate:         5
+
+# Google Analytics
+#google_analytics_tracking_id: UA-36102948-1
+
+# Facebook Comments
+#facebook_appid: 269506799827290
