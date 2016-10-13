@@ -13,7 +13,7 @@ To install Elixir, first of all you will need to install Erlang on your system, 
 
 ### Install asdf ###
 
-[asdf](https://github.com/asdf-vm/asdf) is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
+I use asdf as version manager for this tutorial. [asdf](https://github.com/asdf-vm/asdf) is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
 
 ```
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
@@ -77,7 +77,7 @@ To install Elixir. First of all is to get plugin for elixir. Copy & paste follow
 ```
 $ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir
 ```
-Make sure plugin that was added in the list
+Make sure plugin that has added in the list
 
 ```
 $ asdf plugin-list
@@ -115,7 +115,7 @@ global writes the version to $HOME/.tool-versions.
 
 local writes the version to $PWD/.tool-versions, creating it if needed.
 
-You can check to  make sure it has work properly. If no problem, the result as seen below
+You can check to make sure it has work properly. If no problem, the result as seen below
 
 ```
 elixir -v
