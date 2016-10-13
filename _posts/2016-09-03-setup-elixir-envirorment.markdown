@@ -13,7 +13,7 @@ To install Elixir, first of all you will need to install Erlang on your system, 
 
 ### Install asdf ###
 
-[asdf] (https://github.com/asdf-vm/asdf) is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
+[asdf](https://github.com/asdf-vm/asdf) is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
 
 ```
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
