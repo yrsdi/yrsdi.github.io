@@ -9,11 +9,11 @@ categories:
 
 ### Preparations ###
 
-To install Elixir, first of all you will need to install Erlang on your system, it was described on [my previous article](http://localhost:4001/programming/setup-erlang-with-kerl-mac-osx/) .
+To install Elixir, first of all you will need to install Erlang on your system, it was described on [my previous article](http://yrsdi.blogupstairs.com/programming/setup-erlang-with-kerl-mac-osx/) .
 
 ### Install asdf ###
 
-asdf is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
+[asdf] (https://github.com/asdf-vm/asdf) is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
 
 ```
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
