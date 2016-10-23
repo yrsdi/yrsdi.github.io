@@ -7,7 +7,7 @@ categories:
 - programming
 ---
 
-To install erlang on Mac OSX is so easier, you just go to download from this site and installing it by one click or using homebrew by using `brew install erlang` command and tada your erlang will live on your system. But Installing by using it. It will force you to have only one version of the language to use at any point in time, when you need a specific language version of erlang for one of your projects, you will have to break. Versioned language management is the way to avoid the hassle of it.
+To install erlang on Mac OSX is so easier, you just go to download from [this site](https://www.erlang-solutions.com/resources/download.html) and installing it by one click or using homebrew by using `brew install erlang` command and tada your erlang will live on your system. But Installing by using it. It will force you to have only one version of the language to use at any point in time, when you need a specific language version of erlang for one of your projects, you will have to break. Versioned language management is the way to avoid the hassle of it.
 
 Kerl is a versioned management tool to building and installing of Erlang/OTP instances. Here are Prerequisites, before installing it on Mac OS X.
 
