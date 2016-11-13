@@ -134,7 +134,11 @@ $ which erl
 if you get output with nothing result after run that command, you need to active the one of erlang that has installed.
 
 ```
-$ . /Users/erlang/R16B03/activate
+$ KERL_ENABLE_PROMPT=y . ~/erlang/R16B03/activate
+(erlang-r16b03)$ which erl
+.../erlang/release/r16b03/bin/erl
+(erlang-r16b03)$ erl
+Eshell V5.10.4  (abort with ^G)
 ```
 
 and check again erl
