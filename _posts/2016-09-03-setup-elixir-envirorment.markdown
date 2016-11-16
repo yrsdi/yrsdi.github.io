@@ -89,11 +89,12 @@ elixir
 ```
 
 To see Elixir versions which are available
+
 ```
 $ asdf plugin-update elixir
 $ asdf list-all elixir 
-
 ```
+
 ### Manage Version for Elixir ###
 
 If plugin already added in the list, now you can install it. use this format `asdf install <name> <version`
