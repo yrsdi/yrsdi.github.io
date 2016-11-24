@@ -7,7 +7,7 @@ categories:
 - programming
 ---
 
-If you have problem experienced when you run phoenix server and got error like this ``` [error] Failed to start Ranch listener CoWall.Endpoint.HTTP in :ranch_tcp:listen([port: 4000]) for reason :eaddrinuse (address already in use) ``` . It's mean that, another process has reserved default port (4000), so you need to release it or use another port. 
+If you have problem experienced when you run phoenix server and got error like this ``` [error] Failed to start Ranch listener CoWall.Endpoint.HTTP in :ranch_tcp:listen([port: 4000]) for reason :eaddrinuse (address already in use) ``` . It's mean that, the default port(4000) has reserved with another process, so you need to release it or use another port. 
 
 If you want to known which process is listening on this port You can use this linux cmd ``` lsof -i :4000 ``` to find out more, See this article for examples: http://www.cyberciti.biz/faq/what-process-has-open-linux-port/. Below is the example one.
 
