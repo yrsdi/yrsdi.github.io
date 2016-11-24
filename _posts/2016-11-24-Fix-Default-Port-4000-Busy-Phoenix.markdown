@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fix Default 4000 Port Busy on Phoenix"
+title: "Fix Default Port(40000) Busy on Phoenix"
 date: 2016-11-24 23:15
 comments: true
 categories: 
