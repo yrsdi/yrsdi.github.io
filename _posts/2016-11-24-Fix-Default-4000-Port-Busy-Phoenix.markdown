@@ -11,7 +11,7 @@ If you have problem experienced when you run phoenix server and got error like t
 
 ```
 
-(erlang-1802)[yrsdi@mac conference_wall]$ lsof -i :4000
+(erlang-1802)[yrsdi@mac co_wall]$ lsof -i :4000
 COMMAND    PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 Google     274 yrsdi  103u  IPv4 0xa174d9f2406034c5      0t0  TCP localhost:54543->localhost:terabase (ESTABLISHED)
 beam.smp  7640 yrsdi   20u  IPv4 0xa174d9f2438e60e5      0t0  TCP *:terabase (LISTEN)
