@@ -37,6 +37,7 @@ WHERE   b.id IS NULL
 
 ```
 
+<script src="https://gist.github.com/jonschlinkert/5854601.js"></script>
 
 3 . Ambil data terakhir sebanyak N, hasilnya kita buat inisialisasi dengan nama lim, setelah itu delete semua record di tabel tersebut dengan kondisi dimana idnya bukan data N yang telah diambil
 
