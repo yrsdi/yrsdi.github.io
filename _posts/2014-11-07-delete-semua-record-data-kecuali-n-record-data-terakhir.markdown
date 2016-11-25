@@ -11,7 +11,7 @@ Setelah sekian lama ga nulis dan sharing. Kali ini saya coba sharing pengalaman 
 Suatu tabel dalam suatu database memiliki beberapa record data, sebanyak N record data harus tetap ada dalam tabel tersebut, dimana setiap N record data baru terisi setiap 1 jam sekali dan data lamanya akan terhapus. lalu bagaimana querynya? (contoh kasus untuk MySQL)
 Ada beberapa metode yang bisa kita lakukan. berikut adalah beberapa logic method yang bisa kita terapkan.
 
-1. meng-count data pada tabel tersebut, hasilnya dikurangi N data yang akan di keep, kemudian selisihnya kita hapus, jika kita ilustrasikan querynya adalah sebagai berikut :
+1.meng-count data pada tabel tersebut, hasilnya dikurangi N data yang akan di keep, kemudian selisihnya kita hapus, jika kita ilustrasikan querynya adalah sebagai berikut :
 
 ``` sql
 DELETE FROM table
@@ -20,7 +20,7 @@ LIMIT ((SELECT COUNT(*) FROM table ) - N Data)
 
 ```
 
-2. Kita buat subquery untuk mengambil data sebanyak N dan buat inisial tablenya (disini adalah a), setelah itu kita left join dan buat inisial b, kemudian relasikan a dan b, hasilnya kita delete dengan kondisi id untuk tabel b adalah NULL. ilustrasi querynya sebagai berikut
+2.Kita buat subquery untuk mengambil data sebanyak N dan buat inisial tablenya (disini adalah a), setelah itu kita left join dan buat inisial b, kemudian relasikan a dan b, hasilnya kita delete dengan kondisi id untuk tabel b adalah NULL. ilustrasi querynya sebagai berikut
 
 ``` sql
 DELETE c.*
@@ -38,7 +38,7 @@ WHERE   b.id IS NULL
 ```
 
 
-3. Ambil data terakhir sebanyak N, hasilnya kita buat inisialisasi dengan nama lim, setelah itu delete semua record di tabel tersebut dengan kondisi dimana idnya bukan data N yang telah diambil
+3.Ambil data terakhir sebanyak N, hasilnya kita buat inisialisasi dengan nama lim, setelah itu delete semua record di tabel tersebut dengan kondisi dimana idnya bukan data N yang telah diambil
 
 ``` sql
 DELETE FROM `table`
@@ -54,7 +54,7 @@ WHERE id NOT IN (
 
 ```
 
-4. Ambil data sebanyak 1 dengan Offset N, hasilnya diambil kembali dan buat inisialisasi tabel, misal lim, setelah itu kita delete semua record pada tabel dengan kondisi dimana idnya adalah lebih kecil sama dengan data dari id yang sudah diperoleh.
+4.Ambil data sebanyak 1 dengan Offset N, hasilnya diambil kembali dan buat inisialisasi tabel, misal lim, setelah itu kita delete semua record pada tabel dengan kondisi dimana idnya adalah lebih kecil sama dengan data dari id yang sudah diperoleh.
 
 ``` sql
 
@@ -71,7 +71,7 @@ DELETE FROM `table`
 
 ```
 
-5. Metode ini logikanya hampir sama dengan metode ke-4. hanya saja menggunakan JOIN Clause, bukan WHERE clause. dalam metode ini kita tidak perlu lagi menyelect data yang telah dihasilkan untuk diinisialisasi
+5.Metode ini logikanya hampir sama dengan metode ke-4. hanya saja menggunakan JOIN Clause, bukan WHERE clause. dalam metode ini kita tidak perlu lagi menyelect data yang telah dihasilkan untuk diinisialisasi
 
 ``` sql
 DELETE
