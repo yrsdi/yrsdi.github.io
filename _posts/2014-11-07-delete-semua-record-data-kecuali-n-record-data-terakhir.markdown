@@ -4,7 +4,7 @@ title: "Delete Semua record data kecuali N record data terakhir"
 date: 2014-11-07 19:45
 comments: true
 categories: 
-- programming
+- sql
 ---
 
 Setelah sekian lama ga nulis dan sharing. Kali ini saya coba sharing pengalaman sesuai dengan kebutuhan pekerjaan. karena pekerjaan kali ini banyak berkutat dengan query dan query terutama untuk Oracle dan MySQL. Contoh kasusnya adalah sebagai berikut:
