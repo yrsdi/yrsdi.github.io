@@ -22,7 +22,7 @@ LIMIT ((SELECT COUNT(*) FROM table ) - N Data)
 
 2.Kita buat subquery untuk mengambil data sebanyak N dan buat inisial tablenya (disini adalah a), setelah itu kita left join dan buat inisial b, kemudian relasikan a dan b, hasilnya kita delete dengan kondisi id untuk tabel b adalah NULL. ilustrasi querynya sebagai berikut
 
-<script src="https://gist.github.com/yrsdi/a4d097299edb8db7bfee.js?file=gist.md"></script>
+<script src="https://gist.github.com/yrsdi/a4d097299edb8db7bfee.js"></script>
 
 
 3.Ambil data terakhir sebanyak N, hasilnya kita buat inisialisasi dengan nama lim, setelah itu delete semua record di tabel tersebut dengan kondisi dimana idnya bukan data N yang telah diambil
