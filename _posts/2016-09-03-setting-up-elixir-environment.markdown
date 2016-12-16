@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install & Seting up Elixir Envirorment"
+title: "Install & Setting up Elixir Environment"
 date: 2016-09-03 07:05
 comments: true
 categories: 
