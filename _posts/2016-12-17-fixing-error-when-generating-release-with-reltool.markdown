@@ -7,7 +7,7 @@ categories:
 - programming
 ---
 
-I found great blog which has describe erlang application management with reltool : http://alancastro.org/2010/05/01/erlang-application-management-with-rebar.html . I'm following step by step and everything goes smoothly until the step when trying to run the release with reltool. I had got stuck during release generation, this error occours when i run command service with console `sh mysample/bin/mysample console`
+I found this blog which has describe how to build erlang project using rebar and then generating release with reltool : http://alancastro.org/2010/05/01/erlang-application-management-with-rebar.html . I'm following step by step and everything goes smoothly until the step when trying to run the release with reltool. I had got stuck during release generation, this error occours when i run command service with console `sh mysample/bin/mysample console`
 
 ```
 {"init terminating in do_boot",{'cannot load',elf_format,get_files}}
