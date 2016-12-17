@@ -7,9 +7,7 @@ categories:
 - programming
 ---
 
-I found great blog which has describe erlang application management with reltool : http://alancastro.org/2010/05/01/erlang-application-management-with-rebar.html 
-I'm following step by step and everything goes smoothly until the step when trying to run the release with reltool. I had got stuck during release generation or 
-this error occours when i run service with console `sh mysample/bin/mysample console`
+I found great blog which has describe erlang application management with reltool : http://alancastro.org/2010/05/01/erlang-application-management-with-rebar.html . I'm following step by step and everything goes smoothly until the step when trying to run the release with reltool. I had got stuck during release generation, this error occours when i run command service with console `sh mysample/bin/mysample console`
 
 ```
 {"init terminating in do_boot",{'cannot load',elf_format,get_files}}
@@ -18,14 +16,13 @@ Crash dump is being written to: erl_crash.dump...done
 init terminating in do_boot ()
 
 ```
-After searched to find out how to fix it. finally, i've found the solution of it. it causes errors related to hipe when generating a release,
-so I need to exclude hipe application and add this line to reltool.config
+After searched to find out how to fix it. finally, i've found the solution of it. it causes errors related to hipe when generating a release, so I need to exclude hipe application and add this line to reltool.config
 
 ```
 {app, hipe, [{incl_cond, exclude}]},
 
 ```
-After add it and run command again. the result was working properly
+After add it and run command again. the result was working properly and haven't got error again
 
 ```
 (erlang-1802)[yrsdi@mac rel]$ sh mysample/bin/mysample console
