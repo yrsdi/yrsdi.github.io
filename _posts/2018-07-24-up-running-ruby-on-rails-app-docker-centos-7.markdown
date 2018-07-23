@@ -24,8 +24,18 @@ $ vi Dockerfile
 and define basic environment in it. 
 
 ```
-FROM ruby:alpine
+FROM ruby:2.5-alpine
 
-RUN apk add --update build-base postgresql-dev tzdata
+RUN apk update && apk add build-base postgresql-dev
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install --binstubs
+
+COPY . .
+
+CMD puma -C config/puma.rb
 
 ```
