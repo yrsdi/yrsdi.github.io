@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "WARNING: IPython History requires SQLite, your history will not be saved"
+title: WARNING: IPython History requires SQLite, your history will not be saved
 date: 2018-07-25  07:00
 comments: true
 categories: 
