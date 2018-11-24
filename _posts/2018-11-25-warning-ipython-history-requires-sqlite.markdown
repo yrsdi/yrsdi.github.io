@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Recently, i've got warning message _**"WARNING: IPython History requires SQLite, your history will not be saved"**_  while compiling python code on Emacs after install _ipython_. Here are the step, how to fix it.
 1. Install **package libsqlite3-dev** (_sudo apt install libsqlite3-dev_).
