@@ -9,9 +9,9 @@ categories:
 - programming
 ---
 ### Sedikit Sejarah Tentang Clojure
-* Nama Clojure berasal dari plesetan dari konsep pemograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemograman tersebut memiliki pengaruh besar pada desain Clojure.
+* Nama Clojure berasal dari plesetan konsep pemograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemograman tersebut memiliki pengaruh besar pada desain Clojure.
 * Di buat dan di desain oleh Rich Hickey.
-* Rilis pertama kali October 16, 2007.
+* Rilis pertama kali pada 16 oktober 2007.
 * Hickey menginginkan Lisp modern untuk pemrograman fungsional yang bisa bersimbiosis dengan platform Java yang sudah established, dan dirancang untuk konkurensi.
 
 ### Apa itu bahasa pemograman Clojure ?
@@ -43,7 +43,6 @@ categories:
 Untuk mencoba syntak dari clojure ada beberapa cara:
 
 **1. Online plyground**
-
     Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
 
 *  [replit.com](https://replit.com/@KirillRyabin/clojure-playground)
@@ -127,7 +126,7 @@ $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:522
 ```
 
 ### Membuat Proyek baru
-Untuk memulai membuat proyek baru menggunakan leiningan, ada baiknya kita tau beberapa template proyek yang dapat kita gunakan sesuai tujuan dari proyek yang akan kita buat. 
+Untuk memulai membuat proyek baru menggunakan leiningan, ada baiknya kita tau beberapa template proyek yang bisa   kita gunakan sesuai tujuan dari proyek yang akan kita buat. 
 
 Ada beberapa opsi template yang bisa digunakan, diantaranya:
 
