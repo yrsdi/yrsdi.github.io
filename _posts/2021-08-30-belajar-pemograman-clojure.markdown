@@ -45,10 +45,10 @@ Untuk mencoba syntax dari clojure ada beberapa cara:
 **1. Online plyground**
     Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
 
-*  [https://replit.com/@KirillRyabin/clojure-playground] (https://replit.com/@KirillRyabin/clojure-playground)
-*  [https://codebeautify.org/alleditor/cb224598] (https://codebeautify.org/alleditor/cb224598)
-*  [https://code.labstack.com/clojure] (https://code.labstack.com/clojure)
-*  [http://app.klipse.tech] (http://app.klipse.tech)
+*  [replit.com] (https://replit.com/@KirillRyabin/clojure-playground)
+*  [codebeautify.org] (https://codebeautify.org/alleditor/cb224598)
+*  [code.labstack.com] (https://code.labstack.com/clojure)
+*  [app.klipse.tech] (http://app.klipse.tech)
     
 **2. Instalasi di lokal PC/laptop.**
    Instalasi di PC/Laptop diperlukan java runtime terlebih dulu, sebelum instalasi clojure. Jadi pastikan java sudah terinstall.
