@@ -8,13 +8,13 @@ categories:
 - clojure
 - programming
 ---
-## Sedikit Sejarah Tentang Clojure
+### Sedikit Sejarah Tentang Clojure
 * Nama Clojure berasal dari plesetan dari konsep pemograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemograman tersebut memiliki pengaruh besar pada desain Clojure.
 * Di buat dan di desain oleh Rich Hickey.
 * Rilis pertama kali October 16, 2007.
 * Hickey menginginkan Lisp modern untuk pemrograman fungsional yang bisa bersimbiosis dengan platform Java yang sudah established, dan dirancang untuk konkurensi.
 
-## Apa itu bahasa pemograman Clojure ?
+### Apa itu bahasa pemograman Clojure ?
 * Clojure adalah bagian dari keluarga Lisp, yg memanfaatkan dan mempertahankan fitur2 terbaik dari Lisp-1.
 * Di Hosted di JVM (Java Virtual Machine).
 * Dynamic, general-purpose programming language.
@@ -26,7 +26,7 @@ categories:
 
 <!--more-->
 
-## Kenapa harus belajar Clojure ?
+### Kenapa harus belajar Clojure ?
 * Dibangun dari perpaduan unik dan fitur-fitur terbaik dari sejumlah bahasa pemograman : C#, Lisp, Ruby, Python, Java, Haskell, dll.
 * Bisa menggunakan library Java apapun begitupun sebaliknya (vice versa), tanpa mengurangi performance.
 * Java runtime adalah clojure runtime.
@@ -39,7 +39,7 @@ categories:
 * Homoiconicity, maksudnya kode yg ditulis di encode sebagai struktur data.
 * Clojure merupakan superset dari EDN (*Extensible Data Notation*), sebuah format data transfer seperti halnya JSON, Manfaat utama EDN atas JSON dan YAML adalah dapat diextend.
 
-## Instalasi Clojure
+### Instalasi Clojure
 Untuk mencoba syntak dari clojure ada beberapa cara:
 
 **1. Online plyground**
@@ -126,7 +126,7 @@ $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:522
     user=>
 ```
 
-## Membuat Proyek baru
+### Membuat Proyek baru
 Untuk memulai membuat proyek baru menggunakan leiningan, ada baiknya kita tau beberapa template proyek yang dapat kita gunakan sesuai tujuan dari proyek yang akan kita buat. 
 
 Ada beberapa opsi template yang bisa digunakan, diantaranya:
