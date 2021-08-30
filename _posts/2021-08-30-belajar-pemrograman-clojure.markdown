@@ -8,6 +8,9 @@ categories:
 - clojure
 - programming
 ---
+
+![](https://i.imgur.com/Af51QU8.png)
+
 ### Sedikit Sejarah Tentang Clojure
 * Nama Clojure berasal dari plesetan konsep pemrograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemrograman tersebut memiliki pengaruh besar pada desain Clojure.
 * Di buat dan di desain oleh Rich Hickey.
@@ -19,7 +22,7 @@ categories:
 * Di Hosted di JVM (Java Virtual Machine).
 * Dynamic, general-purpose programming language.
 * Lebih dominan sebagai functional programming language tetapi tidak pure.
-* Memiliki Struktur data yang persisten dan tidak dapat diubah, tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multithreaded yang bersih.
+* Memiliki Struktur data yang persisten dan tidak dapat diubah (Imutable), tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multithreaded yang bersih.
 * Compiled language.
 * Menganut filosofi 'code-as-data', seperti Lisp dialek lainya.
 * Powerful macro system.
