@@ -45,19 +45,21 @@ Untuk mencoba syntax dari clojure ada beberapa cara:
 **1. Online plyground**
     Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
 
-* https://replit.com/@KirillRyabin/clojure-playground
-*  https://codebeautify.org/alleditor/cb224598
-*  https://code.labstack.com/clojure
-*  http://app.klipse.tech
+*  [https://replit.com/@KirillRyabin/clojure-playground] (https://replit.com/@KirillRyabin/clojure-playground)
+*  [https://codebeautify.org/alleditor/cb224598] (https://codebeautify.org/alleditor/cb224598)
+*  [https://code.labstack.com/clojure] (https://code.labstack.com/clojure)
+*  [http://app.klipse.tech] (http://app.klipse.tech)
     
 **2. Instalasi di lokal PC/laptop.**
    Instalasi di PC/Laptop diperlukan java runtime terlebih dulu, sebelum instalasi clojure. Jadi pastikan java sudah terinstall.
-   
-   `$ java --version`
-`$ openjdk 11.0.2 2019-01-15
+
+```
+$ java --version
+$ openjdk 11.0.2 2019-01-15
 OpenJDK Runtime Environment 18.9 (build 11.0.2+9)
-OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode`
-   
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode
+
+```   
    Ada beberapa metode instalasi:
    * Menggunakan metode dari offcialnya [clojure.org](https://clojure.org/guides/getting_started)
    * Instalasi langsung dengan https://leiningen.org. Leiningen adalah projek automation, support integrasi ke maven. Leiningen menangani manajemen dan dependensi dari projek package dan dikonfigurasi menggunakan sintaks Clojure itu sendiri.
@@ -67,9 +69,12 @@ Saya sendiri merekomendasikan untuk menggunakan cara ke-3, alasannya karena asdf
 
 Jadi, pastikan sudah terinstall asdfnya
 
-`$ asdf --version`
-`$ v0.8.1`
-    
+```
+$ asdf --version
+$ v0.8.1
+
+```
+
 Misal disini kita mau install leiningen
 
 * Tambahkan dulu pluginnya
@@ -86,18 +91,20 @@ Misal disini kita mau install leiningen
 * Jika sudah dipastikan leiningan sudah terinstall dengan benar, kita bisa mulai bermain.
 `$ lein repl`
 
-    `$ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289`
-    `REPL-y 0.4.4, nREPL 0.8.3`
-    `Clojure 1.10.1`
-    `OpenJDK 64-Bit Server VM 11.0.2+9`
-        `Docs: (doc function-name-here)`
-             `(find-doc "part-of-name-here")`
-      `Source: (source function-name-here)`
-     `Javadoc: (javadoc java-object-or-class-here)`
-        `Exit: Control+D or (exit) or (quit)`
-     `Results: Stored in vars *1, *2, *3, an exception in *e
-    user=>`
+```
+    $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289
+    REPL-y 0.4.4, nREPL 0.8.3
+    Clojure 1.10.1
+    OpenJDK 64-Bit Server VM 11.0.2+9
+        Docs: (doc function-name-here)
+             (find-doc "part-of-name-here")
+      Source: (source function-name-here)
+     Javadoc: (javadoc java-object-or-class-here)
+        Exit: Control+D or (exit) or (quit)
+     Results: Stored in vars *1, *2, *3, an exception in *e
+    user=>
 
+```
 ## Membuat Proyek baru
 Untuk memulai membuat proyek baru menggunakan leiningan, ada baiknya kita tau beberapa template proyek yang dapat kita gunakan sesuai tujuan dari proyek yang akan kita buat. 
 
