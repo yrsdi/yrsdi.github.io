@@ -43,7 +43,8 @@ categories:
 Untuk mencoba syntak dari clojure ada beberapa cara:
 
 **1. Online plyground**
-    Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
+
+Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
 
 *  [replit.com](https://replit.com/@KirillRyabin/clojure-playground)
 *  [codebeautify.org](https://codebeautify.org/alleditor/cb224598)
