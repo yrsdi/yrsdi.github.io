@@ -10,7 +10,7 @@ permalink:        /:categories/:title/
 
 # Setup
 title:            'YRSDI.Blog'
-tagline:          'Programming, Tools and Anything'
+tagline:          'Programming, Linux and Anything'
 description:      'software development, programming language, open source technology, web development tools'
 url:              http://yrsdi.github.io
 
@@ -23,7 +23,7 @@ author:
   facebook:       yadi.rosadi
   url:            http://yrsdi.github.io
   email_hash:     f86c35cd9b4696694b26eb96b5c825bf
-  bio:            'Software Engineer, Blogger who passionate to learn new things, especially programming language and web development tools'
+  bio:            'Blogger who passionate to learn new things, especially programming language and web development tools'
 
 gems: 
   - jekyll-paginate
