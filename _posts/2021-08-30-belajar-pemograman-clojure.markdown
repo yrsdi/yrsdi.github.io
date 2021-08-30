@@ -82,38 +82,37 @@ Misal disini kita mau install leiningen
 $ asdf plugin-add leiningen
 
 ```
+
 * View versi yg available
 ```
 $ asdf list-all leiningen
 
 ```
 * Pilih versi yg akan kita install
+
 ```
 $ asdf install leiningen 2.9.6 
 
 ```
 * Set konfig digunakan untuk semua kebutuhan (global) atau untuk kebutuhan tertentu (local)
+
 ```
 $ asdf global leiningen 2.9.6
 
 ```
+
 * Pastikan leiningan sudah terinstall
 ```
 $  lein --version
-
-```
-```
 $ Leiningen 2.9.6 on Java 11.0.2 OpenJDK 64-Bit Server V
 
 ```
+
 * Jika sudah dipastikan leiningan sudah terinstall dengan benar, kita bisa mulai bermain.
 
 ```
 $ lein repl
-```
-
-```
-    $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289
+$ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289
     REPL-y 0.4.4, nREPL 0.8.3
     Clojure 1.10.1
     OpenJDK 64-Bit Server VM 11.0.2+9
