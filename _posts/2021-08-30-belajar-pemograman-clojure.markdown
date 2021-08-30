@@ -101,12 +101,14 @@ $ asdf global leiningen 2.9.6
 ```
 
 * Pastikan leiningan sudah terinstall
+
 ```
 $ lein --version
 $ Leiningen 2.9.6 on Java 11.0.2 OpenJDK 64-Bit Server V
 ```
 
 * Jika sudah dipastikan leiningan sudah terinstall dengan benar, kita bisa mulai bermain.
+
 ```
 $ lein repl
 $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289
