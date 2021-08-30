@@ -8,11 +8,11 @@ categories:
 - clojure
 - programming
 ---
-## Sedikit Sejarah Dari Clojure
+## Sedikit Sejarah Tentang Clojure
 * Nama Clojure berasal dari plesetan dari konsep pemograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemograman tersebut memiliki pengaruh besar pada desain Clojure.
 * Di buat dan di desain oleh Rich Hickey.
 * Rilis pertama kali October 16, 2007.
-* Hickey menginginkan Lisp modern untuk pemrograman fungsional, bersimbiosis dengan platform Java yang sudah established, dan dirancang untuk konkurensi.
+* Hickey menginginkan Lisp modern untuk pemrograman fungsional yang bisa bersimbiosis dengan platform Java yang sudah established, dan dirancang untuk konkurensi.
 
 ## Apa itu bahasa pemograman Clojure ?
 * Clojure adalah bagian dari keluarga Lisp, yg memanfaatkan dan mempertahankan fitur2 terbaik dari Lisp-1.
@@ -78,18 +78,39 @@ $ v0.8.1
 Misal disini kita mau install leiningen
 
 * Tambahkan dulu pluginnya
-`$ asdf plugin-add leiningen`
+```
+$ asdf plugin-add leiningen
+
+```
 * View versi yg available
-`$ asdf list-all leiningen`
+```
+$ asdf list-all leiningen
+
+```
 * Pilih versi yg akan kita install
-`$ asdf install leiningen 2.9.6 `
+```
+$ asdf install leiningen 2.9.6 
+
+```
 * Set konfig digunakan untuk semua kebutuhan (global) atau untuk kebutuhan tertentu (local)
-`$ asdf global leiningen 2.9.6`
+```
+$ asdf global leiningen 2.9.6
+
+```
 * Pastikan leiningan sudah terinstall
-`$  lein --version`
-`$ Leiningen 2.9.6 on Java 11.0.2 OpenJDK 64-Bit Server V`
+```
+$  lein --version
+
+```
+```
+$ Leiningen 2.9.6 on Java 11.0.2 OpenJDK 64-Bit Server V
+
+```
 * Jika sudah dipastikan leiningan sudah terinstall dengan benar, kita bisa mulai bermain.
-`$ lein repl`
+
+```
+$ lein repl
+```
 
 ```
     $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289
