@@ -72,44 +72,41 @@ Jadi, pastikan sudah terinstall asdfnya
 ```
 $ asdf --version
 $ v0.8.1
-
 ```
 
 Misal disini kita mau install leiningen
 
 * Tambahkan dulu pluginnya
+
 ```
 $ asdf plugin-add leiningen
-
 ```
 
 * View versi yg available
-```
-$ asdf list-all leiningen
 
 ```
+$ asdf list-all leiningen
+```
+
 * Pilih versi yg akan kita install
 
 ```
 $ asdf install leiningen 2.9.6 
-
 ```
+
 * Set konfig digunakan untuk semua kebutuhan (global) atau untuk kebutuhan tertentu (local)
 
 ```
 $ asdf global leiningen 2.9.6
-
 ```
 
 * Pastikan leiningan sudah terinstall
 ```
-$  lein --version
+$ lein --version
 $ Leiningen 2.9.6 on Java 11.0.2 OpenJDK 64-Bit Server V
-
 ```
 
 * Jika sudah dipastikan leiningan sudah terinstall dengan benar, kita bisa mulai bermain.
-
 ```
 $ lein repl
 $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:52289
@@ -123,8 +120,8 @@ $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:522
         Exit: Control+D or (exit) or (quit)
      Results: Stored in vars *1, *2, *3, an exception in *e
     user=>
-
 ```
+
 ## Membuat Proyek baru
 Untuk memulai membuat proyek baru menggunakan leiningan, ada baiknya kita tau beberapa template proyek yang dapat kita gunakan sesuai tujuan dari proyek yang akan kita buat. 
 
