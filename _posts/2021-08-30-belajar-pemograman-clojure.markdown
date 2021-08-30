@@ -45,10 +45,10 @@ Untuk mencoba syntax dari clojure ada beberapa cara:
 **1. Online plyground**
     Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
 
-*  [replit.com] (https://replit.com/@KirillRyabin/clojure-playground)
-*  [codebeautify.org] (https://codebeautify.org/alleditor/cb224598)
-*  [code.labstack.com] (https://code.labstack.com/clojure)
-*  [app.klipse.tech] (http://app.klipse.tech)
+*  [replit.com](https://replit.com/@KirillRyabin/clojure-playground)
+*  [codebeautify.org](https://codebeautify.org/alleditor/cb224598)
+*  [code.labstack.com](https://code.labstack.com/clojure)
+*  [app.klipse.tech](http://app.klipse.tech)
     
 **2. Instalasi di lokal PC/laptop.**
    Instalasi di PC/Laptop diperlukan java runtime terlebih dulu, sebelum instalasi clojure. Jadi pastikan java sudah terinstall.
@@ -62,8 +62,8 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode
 ```   
    Ada beberapa metode instalasi:
    * Menggunakan metode dari offcialnya [clojure.org](https://clojure.org/guides/getting_started)
-   * Instalasi langsung dengan https://leiningen.org. Leiningen adalah projek automation, support integrasi ke maven. Leiningen menangani manajemen dan dependensi dari projek package dan dikonfigurasi menggunakan sintaks Clojure itu sendiri.
-   * Menggunakan asdf version manager https://asdf-vm.com
+   * Instalasi langsung dengan [leiningen.org](https://leiningen.org). Leiningen adalah projek automation, support integrasi ke maven. Leiningen menangani manajemen dan dependensi dari projek package dan dikonfigurasi menggunakan sintaks Clojure itu sendiri.
+   * Menggunakan asdf version manager [asdf-vm.org](https://asdf-vm.com)
 
 Saya sendiri merekomendasikan untuk menggunakan cara ke-3, alasannya karena asdf support hampir semua bahasa pemograman dan mudah untuk manage versi jika ingin switch ke versi yg lebih rendah atau tinggi dan mudah untuk instalasi tentunya. Kalian bisa juga install java & leiningen menggunakan asdf ini.
 
