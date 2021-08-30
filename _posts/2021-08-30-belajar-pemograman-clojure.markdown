@@ -24,6 +24,8 @@ categories:
 * Menganut filosofi 'code-as-data', seperti Lisp Dialek lainya.
 * Powerful macro system.
 
+<!--more-->
+
 ## Kenapa harus belajar Clojure ?
 * Dibangun dari perpaduan unik dan fitur-fitur terbaik dari sejumlah bahasa pemograman : Lisp, Ruby, Python, Java, Haskell, dll.
 * Bisa menggunakan library Java apapun begitupun sebaliknya (vice versa), tanpa mengurangi performance.
