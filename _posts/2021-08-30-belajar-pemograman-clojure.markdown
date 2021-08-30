@@ -21,17 +21,17 @@ categories:
 * Lebih dominan sebagai functional programming language tetapi tidak pure.
 * Memiliki Struktur data yang persisten dan tidak dapat diubah, tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multithreaded yang bersih.
 * Compiled language.
-* Menganut filosofi 'code-as-data', seperti Lisp Dialek lainya.
+* Menganut filosofi 'code-as-data', seperti Lisp dialek lainya.
 * Powerful macro system.
 
 <!--more-->
 
 ## Kenapa harus belajar Clojure ?
-* Dibangun dari perpaduan unik dan fitur-fitur terbaik dari sejumlah bahasa pemograman : Lisp, Ruby, Python, Java, Haskell, dll.
+* Dibangun dari perpaduan unik dan fitur-fitur terbaik dari sejumlah bahasa pemograman : C#, Lisp, Ruby, Python, Java, Haskell, dll.
 * Bisa menggunakan library Java apapun begitupun sebaliknya (vice versa), tanpa mengurangi performance.
 * Java runtime adalah clojure runtime.
 * Clojure support makro dan kemampuanya terhadap metaprogramming.
-* simplicity and power.
+* simplicity and powerfull.
 * Easy, fast Java interoperability.
 * Mengambil kekuatan dari Lisp, *code as data*.
 * Elegan, expresif code
@@ -40,9 +40,10 @@ categories:
 * Clojure merupakan superset dari EDN (*Extensible Data Notation*), sebuah format data transfer seperti halnya JSON, Manfaat utama EDN atas JSON dan YAML adalah dapat diextend.
 
 ## Instalasi Clojure
-Untuk mencoba syntax dari clojure ada beberapa cara:
+Untuk mencoba syntak dari clojure ada beberapa cara:
 
 **1. Online plyground**
+
     Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari clojure ini, diantaranya; 
 
 *  [replit.com](https://replit.com/@KirillRyabin/clojure-playground)
@@ -51,6 +52,7 @@ Untuk mencoba syntax dari clojure ada beberapa cara:
 *  [app.klipse.tech](http://app.klipse.tech)
     
 **2. Instalasi di lokal PC/laptop.**
+
    Instalasi di PC/Laptop diperlukan java runtime terlebih dulu, sebelum instalasi clojure. Jadi pastikan java sudah terinstall.
 
 ```
@@ -74,7 +76,7 @@ $ asdf --version
 $ v0.8.1
 ```
 
-Misal disini kita mau install leiningen
+Misal disini kita kan coba untuk install leiningen
 
 * Tambahkan dulu pluginnya
 
@@ -82,7 +84,7 @@ Misal disini kita mau install leiningen
 $ asdf plugin-add leiningen
 ```
 
-* View versi yg available
+* View versi yg tersedia
 
 ```
 $ asdf list-all leiningen
@@ -94,7 +96,7 @@ $ asdf list-all leiningen
 $ asdf install leiningen 2.9.6 
 ```
 
-* Set konfig digunakan untuk semua kebutuhan (global) atau untuk kebutuhan tertentu (local)
+* Set config, bisa setting untuk semua kebutuhan (global) atau untuk kebutuhan tertentu (local)
 
 ```
 $ asdf global leiningen 2.9.6
@@ -127,7 +129,7 @@ $ nREPL server started on port 52289 on host` `127.0.0.1 - nrepl://127.0.0.1:522
 ## Membuat Proyek baru
 Untuk memulai membuat proyek baru menggunakan leiningan, ada baiknya kita tau beberapa template proyek yang dapat kita gunakan sesuai tujuan dari proyek yang akan kita buat. 
 
-Ada beberapa opsi template yang bisa digunakan. diantaranya:
+Ada beberapa opsi template yang bisa digunakan, diantaranya:
 
 * **app** – Digunakan untuk membuat aplikasi
 * **default** – Digunakan untuk membuat struktur proyek umum, biasanya untuk membuat library
