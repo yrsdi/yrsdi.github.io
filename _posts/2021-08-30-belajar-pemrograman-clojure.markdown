@@ -9,12 +9,12 @@ categories:
 - programming
 ---
 ### Sedikit Sejarah Tentang Clojure
-* Nama Clojure berasal dari plesetan konsep pemograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemograman tersebut memiliki pengaruh besar pada desain Clojure.
+* Nama Clojure berasal dari plesetan konsep pemrograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemrograman tersebut memiliki pengaruh besar pada desain Clojure.
 * Di buat dan di desain oleh Rich Hickey.
 * Rilis pertama kali pada 16 oktober 2007.
 * Hickey menginginkan Lisp modern untuk pemrograman fungsional yang bisa bersimbiosis dengan platform Java yang sudah established, dan dirancang untuk konkurensi.
 
-### Apa itu bahasa pemograman Clojure ?
+### Apa itu bahasa pemrograman Clojure ?
 * Clojure adalah bagian dari keluarga Lisp, yg memanfaatkan dan mempertahankan fitur2 terbaik dari Lisp-1.
 * Di Hosted di JVM (Java Virtual Machine).
 * Dynamic, general-purpose programming language.
@@ -27,7 +27,7 @@ categories:
 <!--more-->
 
 ### Kenapa harus belajar Clojure ?
-* Dibangun dari perpaduan unik dan fitur-fitur terbaik dari sejumlah bahasa pemograman : C#, Lisp, Ruby, Python, Java, Haskell, dll.
+* Dibangun dari perpaduan unik dan fitur-fitur terbaik dari sejumlah bahasa pemrograman : C#, Lisp, Ruby, Python, Java, Haskell, dll.
 * Bisa menggunakan library Java apapun begitupun sebaliknya (vice versa), tanpa mengurangi performance.
 * Java runtime adalah clojure runtime.
 * Clojure support makro dan kemampuanya terhadap metaprogramming.
@@ -66,7 +66,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode
    * Instalasi langsung dengan [leiningen.org](https://leiningen.org). Leiningen adalah projek automation, support integrasi ke maven. Leiningen menangani manajemen dan dependensi dari projek package dan dikonfigurasi menggunakan sintaks Clojure itu sendiri.
    * Menggunakan asdf version manager [asdf-vm.org](https://asdf-vm.com)
 
-Saya sendiri merekomendasikan untuk menggunakan cara ke-3, alasannya karena asdf support hampir semua bahasa pemograman dan mudah untuk manage versi jika ingin switch ke versi yg lebih rendah atau tinggi dan mudah untuk instalasi tentunya. Kalian bisa juga install java & leiningen menggunakan asdf ini.
+Saya sendiri merekomendasikan untuk menggunakan cara ke-3, alasannya karena asdf support hampir semua bahasa pemrograman dan mudah untuk manage versi jika ingin switch ke versi yg lebih rendah atau tinggi dan mudah untuk instalasi tentunya. Kalian bisa juga install java & leiningen menggunakan asdf ini.
 
 Jadi, pastikan sudah terinstall asdfnya
 
