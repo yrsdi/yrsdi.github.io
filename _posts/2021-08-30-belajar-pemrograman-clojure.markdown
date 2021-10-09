@@ -138,3 +138,35 @@ Ada beberapa opsi template yang bisa digunakan, diantaranya:
 * **default** – Digunakan untuk membuat struktur proyek umum, biasanya untuk membuat library
 * **plugin** – Digunakan untuk membuat Plugin Leiningen
 * **template** – Digunakan untuk membuat template Leiningen baru.
+
+ok, jika kita sudah paham, langsung saja kita buat simple project
+
+```
+$ lein new app hello-world
+```
+Setelah menjalankan perintah tersebut, sekecap project template clojure akan terbentuk
+```
+$ ls
+hello-world
+```
+Jika kita expand, kita bisa lihat struktur projectnya seperti apa. Yang penting dan paling utama adalah `project.clj` dan folder `src`, karena nantinya kita akan lebih sering ngoprek disini.
+
+```
+➜ tree hello-world
+hello-world
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── doc
+│   └── intro.md
+├── project.clj
+├── resources
+├── src
+│   └── hello_world
+│       └── core.clj
+└── test
+    └── hello_world
+        └── core_test.clj
+
+6 directories, 7 files
+```
