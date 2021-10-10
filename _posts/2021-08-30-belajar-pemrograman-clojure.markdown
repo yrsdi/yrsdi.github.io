@@ -139,17 +139,17 @@ Ada beberapa opsi template yang bisa digunakan, diantaranya:
 * **plugin** – Digunakan untuk membuat Plugin Leiningen
 * **template** – Digunakan untuk membuat template Leiningen baru.
 
-ok, jika kita sudah paham, langsung saja kita buat simple project
+Ok, jika kita sudah paham, langsung saja kita buat simple project
 
 ```
 $ lein new app hello-world
 ```
-Setelah menjalankan perintah tersebut, sekecap project template clojure akan terbentuk
+Setelah menjalankan perintah tersebut, sekejap project template clojure akan terbentuk
 ```
 $ ls
 hello-world
 ```
-Jika kita expand, kita bisa lihat struktur projectnya seperti apa. Yang penting dan paling utama adalah `project.clj` dan folder `src`, karena nantinya kita akan lebih sering ngoprek disini.
+Jika kita expand, kita bisa lihat struktur projectnya seperti apa. Yang penting dan paling utama adalah `project.clj` , folder `src` dan `test` karena nantinya kita akan lebih sering ngoprek disini.
 
 ```
 ➜ tree hello-world
@@ -170,3 +170,59 @@ hello-world
 
 6 directories, 7 files
 ```
+
+`project.clj` merupakan manifest atau metadata yg berisi informasi terkait project tersebut, seprti license, dependensi, nama project, deskripsi project dll.
+
+## Menjalankan Aplikasi
+Untuk menjalankan aplikasi clojure, pastikan kita berada di project di direktori aplikasi yg sebelumnya kita buat, kemudian ketikan `lein run'.
+Pada saat pertamakali menjalankannya, clojure akan download semua dependensi dari project kita sebelum menampilkan hasilnya.
+```
+➜  lein run
+Hello, World!
+```
+## Menjalankan Unit Testing
+Untuk menjalankan unit testing dengan perintah `lein test`
+
+```
+➜  hello-world lein test
+
+lein test hello-world.core-test
+
+lein test :only hello-world.core-test/a-test
+
+FAIL in (a-test) (core_test.clj:7)
+FIXME, I fail.
+expected: (= 0 1)
+  actual: (not (= 0 1))
+
+Ran 1 tests containing 1 assertions.
+1 failures, 0 errors.
+Tests failed.
+```
+## Bermain dengan REPL
+REPL (Read Eval Print Loop), Sesuai dengan pengertiannya, REPL adalah alat bantu untuk menjalankan langsung code kita dan menampilkan langsung hasilnya.
+
+REPL bisa dijalankan dengan mengetikan perintah `lein repl`
+
+```
+➜ lein repl
+nREPL server started on port 49770 on host 127.0.0.1 - nrepl://127.0.0.1:49770
+REPL-y 0.4.4, nREPL 0.8.3
+Clojure 1.10.1
+OpenJDK 64-Bit Server VM 11.0.2+9
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+hello-world.core=> (+ 3 5)
+8
+hello-world.core=> (* 3 5)
+15
+hello-world.core=> (+ (* 3 5) 5)
+20
+hello-world.core=>
+```
+
