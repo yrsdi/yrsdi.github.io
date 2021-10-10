@@ -173,14 +173,14 @@ hello-world
 
 `project.clj` merupakan manifest atau metadata yg berisi informasi terkait project tersebut, seprti license, dependensi, nama project, deskripsi project dll.
 
-## Menjalankan Aplikasi
+### Menjalankan Aplikasi
 Untuk menjalankan aplikasi clojure, pastikan kita berada di project di direktori aplikasi yg sebelumnya kita buat, kemudian ketikan `lein run'.
 Pada saat pertamakali menjalankannya, clojure akan download semua dependensi dari project kita sebelum menampilkan hasilnya.
 ```
 ➜  lein run
 Hello, World!
 ```
-## Menjalankan Unit Testing
+### Menjalankan Unit Testing
 Untuk menjalankan unit testing dengan perintah `lein test`
 
 ```
@@ -199,7 +199,7 @@ Ran 1 tests containing 1 assertions.
 1 failures, 0 errors.
 Tests failed.
 ```
-## Bermain dengan REPL
+### Bermain dengan REPL
 REPL (Read Eval Print Loop), Sesuai dengan pengertiannya, REPL adalah alat bantu untuk menjalankan langsung code kita dan menampilkan langsung hasilnya.
 
 REPL bisa dijalankan dengan mengetikan perintah `lein repl`
