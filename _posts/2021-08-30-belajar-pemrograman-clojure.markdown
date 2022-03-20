@@ -21,10 +21,10 @@ categories:
 * Clojure adalah bagian dari keluarga Lisp, yg memanfaatkan dan mempertahankan fitur2 terbaik dari Lisp-1.
 * Di Hosted di JVM (Java Virtual Machine).
 * Dynamic, general-purpose programming language.
-* Lebih dominan sebagai functional programming language tetapi tidak pure.
-* Memiliki Struktur data yang persisten dan tidak dapat diubah (Immutable), tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multithreaded yang bersih.
+* Lebih dominan sebagai functional programming language tetapi tidak pure seperti hal Haskell.
+* Memiliki Struktur data yang persisten dan tidak dapat diubah (Immutable), tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multi-thread yang bersih.
 * Compiled language.
-* Menganut filosofi 'code-as-data', seperti Lisp dialek lainya.
+* Menganut filosofi 'code-as-data' (Homoiconic), seperti Lisp dialek lainya.
 * Powerful macro system.
 
 <!--more-->
@@ -56,7 +56,7 @@ Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari cloj
     
 **2. Instalasi di lokal PC/laptop.**
 
-   Instalasi di PC/Laptop diperlukan java runtime terlebih dulu, sebelum instalasi clojure. Jadi pastikan java sudah terinstall.
+   Instalasi di PC/Laptop diperlukan java runtime, jadi pastikan java sudah terinstall sebelum instalasi clojure. Namun jika anda menggunakan leiningen, saat instalasi java secara otomatis akan ikut terinstall.
 
 ```
 $ java --version
