@@ -56,7 +56,7 @@ Ada banyak online playground yg bisa kita gunakan untuk mencoba sintak dari cloj
     
 **2. Instalasi di lokal PC/laptop.**
 
-   Instalasi di PC/Laptop diperlukan java runtime, jadi pastikan java sudah terinstall sebelum instalasi clojure. Namun jika anda menggunakan leiningen, saat instalasi java secara otomatis akan ikut terinstall.
+   Instalasi di PC/Laptop diperlukan java runtime, jadi pastikan java sudah terinstall sebelum instalasi clojure. Namun, jika anda menginstall leiningen, saat proses instalasi, java akan secara otomatis ikut terinstall.
 
 ```
 $ java --version
