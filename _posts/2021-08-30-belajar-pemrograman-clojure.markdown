@@ -227,7 +227,7 @@ hello-world.core=>
 ```
 ### Memilih IDE text Editor dan plugin
 Ada banyak text editor yang sudah mendukung clojure, yang paling dikenal diantaranya:
-*  [IntelliJ](https://cursive-ide.com) + Cursive
+*  IntelliJ + [Cursive](https://cursive-ide.com)
 *  Emacs + Cider
 *  VS Code + Calva
 *  Atom + proto-repl
