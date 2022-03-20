@@ -22,7 +22,7 @@ categories:
 * Di Hosted di JVM (Java Virtual Machine).
 * Dynamic, general-purpose programming language.
 * Lebih dominan sebagai functional programming language tetapi tidak pure.
-* Memiliki Struktur data yang persisten dan tidak dapat diubah (Imutable), tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multithreaded yang bersih.
+* Memiliki Struktur data yang persisten dan tidak dapat diubah (Immutable), tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multithreaded yang bersih.
 * Compiled language.
 * Menganut filosofi 'code-as-data', seperti Lisp dialek lainya.
 * Powerful macro system.
