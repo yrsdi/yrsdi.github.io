@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Belajar Pemrograman Clojure
+title: Pengenalan dan Basic Pemrograman Clojure
 date: 2021-08-30  09:00
 comments: true
 categories: 
