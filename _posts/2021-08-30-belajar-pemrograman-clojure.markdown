@@ -219,6 +219,7 @@ Hello, World!
 Jika kita berkerja dalam sebuah project library, ada dua cara untuk melakukan build projek.
 
 **1. Lein jar**
+
    jika mengunakan lein jar maka file JAR akan ditempatkan di local target directory, sedangkan
 
    ```
@@ -227,6 +228,7 @@ Jika kita berkerja dalam sebuah project library, ada dua cara untuk melakukan bu
    ```
 
 **2. Lein install**
+
    Jika kita menggunakan lein install, akan mem-build file JAR sekaligus file pom.xml dan menempatkanya ke local maven repositori (biasanya di tempatkan di .m2/repository dalam user home directory)
    ```
    $ lein install
