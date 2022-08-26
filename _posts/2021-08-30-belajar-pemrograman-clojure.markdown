@@ -21,7 +21,7 @@ categories:
 * Clojure adalah bagian dari keluarga Lisp, yg memanfaatkan dan mempertahankan fitur2 terbaik dari Lisp-1.
 * Di Hosted di JVM (Java Virtual Machine).
 * Dynamic, general-purpose programming language.
-* Lebih dominan sebagai functional programming language tetapi tidak pure seperti hal Haskell.
+* Lebih dominan sebagai functional programming language tetapi tidak pure seperti halnya Haskell.
 * Memiliki Struktur data yang persisten dan tidak dapat diubah (Immutable), tetapi, jika Mutable state dibutuhkan, clojure menawarkan sistem memori transaksional dan sistem Agen reaktif yang memastikan desain multi-thread yang bersih.
 * Compiled language.
 * Menganut filosofi 'code-as-data' (Homoiconic), seperti Lisp dialek lainya.
@@ -199,6 +199,42 @@ Ran 1 tests containing 1 assertions.
 1 failures, 0 errors.
 Tests failed.
 ```
+
+### Build Aplikasi atau Library
+Jika kita bekerja dalam sebuah project aplikasi, Leiningen menyediakan *uberjar*, tool yang memudahkan kita untuk meb-build aplikasi kita yang outputnya merupakan file JAR. file JAR yang berisi proyek itu sendiri dan semua dependensinya.
+
+```
+$ lein uberjar
+Compiling hello-world.core
+Created /home/yrsdi/playground/clojure/hello-world/target/uberjar/hello-world-0.1.0-SNAPSHOT.jar
+Created /home/yrsdi/playground/clojure/target/uberjar/hello-world-0.1.0-SNAPSHOT-standalone.jar
+```
+File hello-world-0.1.0-SNAPSHOT.jar adalah file JAR yang berisi lokal project kita, sedangkan file hello-world-0.1.0-SNAPSHOT-standalone.jar adalah file JAR yang sudah di package dan siap dijalankan.
+
+```
+$ java -jar target/uberjar/hello-world-0.1.0-SNAPSHOT-standalone.jar
+Hello, World!
+```
+
+Jika kita berkerja dalam sebuah project library, ada dua cara untuk melakukan build projek.
+
+**1. Lein jar**
+   jika mengunakan lein jar maka file JAR akan ditempatkan di local target directory, sedangkan
+
+   ```
+   $ lein jar
+   Created /home/yrsdi/playground/clojure/hello-library/target/hello-library-0.1.0-SNAPSHOT.jar
+   ```
+
+**2. Lein install**
+   Jika kita menggunakan lein install, akan mem-build file JAR sekaligus file pom.xml dan menempatkanya ke local maven repositori (biasanya di tempatkan di .m2/repository dalam user home directory)
+   ```
+   $ lein install
+   Created /home/yrsdi/playground/clojure/hello-library/target/hello-library-0.1.0-SNAPSHOT.jar
+   Wrote /home/yrsdi/playground/clojure/hello-library/pom.xml
+   Installed jar and pom into local repo.
+   ```
+
 ### Bermain dengan REPL
 REPL (Read Eval Print Loop), Sesuai dengan pengertiannya, REPL adalah alat bantu untuk menjalankan langsung code kita dan menampilkan langsung hasilnya.
 
