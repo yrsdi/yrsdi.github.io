@@ -19,6 +19,9 @@ Scala is a general-purpose statically typed programming language that is a blend
 
 Scala is part of the Java Ecosystem (JVM) which can run on the standard Java platform and interoperates seamlessly with all java libraries.
 
+
+<!--more-->
+
 ### 1.2 What’s Scala used for?
 Basically, Scala can be used for the same things as any other general-purpose programming language on the JVM but for a particular case,  Scala is a good fit for scalable distributed systems, big data analytics, and data processing.
 
