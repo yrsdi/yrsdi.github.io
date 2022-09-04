@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Getting Started with Scala using sbt and asdf
+title: "Getting Started with Scala using sbt and asdf"
 date: 2022-09-04 07:00
 comments: true
 categories: 
