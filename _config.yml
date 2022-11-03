@@ -9,7 +9,7 @@ kramdown:
 permalink:        /:categories/:title/
 
 # Setup
-title:            'YRSDI.Blog'
+title:            'YADI ROSADI'
 tagline:          'Programming, Linux and Anything'
 description:      'software development, programming language, open source technology, web development tools'
 url:              http://yrsdi.github.io
