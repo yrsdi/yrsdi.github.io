@@ -31,7 +31,7 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
 
-paginate:         5
+paginate:         7
 
 # Google Analytics
 #google_analytics_tracking_id: UA-36102948-1
