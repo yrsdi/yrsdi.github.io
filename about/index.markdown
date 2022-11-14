@@ -8,4 +8,4 @@ footer: false
 
 ## Yadi Rosadi ##
 
-Blogger who passionate to learn new things about technology, especially unix family environment, programming language and web development tools
+Tech enthusiast, full-time operation, part-time software developer. I do what i'm Interest for fun and profit
