@@ -7,18 +7,29 @@ categories:
 - programming
 ---
 
-### Preparations ###
+### Introduction ###
 
-To install Elixir, first of all you will need to install Erlang on your system, it was described on [my previous article](http://yrsdi.blogupstairs.com/programming/setup-erlang-with-kerl-mac-osx/) .
+Programming languages regularly release new versions. As a developer, I need to try that version without breaking our existing application in our local environment. The solution is using the version manager tool. version manager helps developers switch between versions easily, several languages have version managers (like SDKman for Java, NVM for Node.js, or Rbenv/RVM for Ruby, etc). 
+
+Too many tools in our local environment is another obstacle. in my case, I need one tool that can be handling multiple programming languages in multiple versions. so my choice is ASDF.
+
+In this tutorial, you'll learn how to install specific versions of Erlang/OTP and Elixir and use the ASDF as version manager.
 
 ### Install asdf ###
 
-I use asdf as version manager for this tutorial. [asdf](https://github.com/asdf-vm/asdf) is version manger that supported many languages include Ruby, Node.js, Erlang, Elixir and more. To install asdf is so easier as simple step below. Copy & paste following command on your terminal
+[asdf](https://github.com/asdf-vm/asdf) is a version manager tool that supports various programming languages including Ruby, Node.js, Erlang, Elixir and more. Before install asdf you need to install the curl and git utilities as prerequisites.
+
+```
+brew install coreutils curl git  # on macOS with Homebrew
+sudo apt install curl git        # on Linux
+
+```
+After the prerequisites installed, now install the ASDF:
 
 ```
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 ```
-Defending on your OS, in this guide I use OSX. if you are using OSX, open `~/.bash_profile` and put this path. If you are on linux, put on `~/.bashrc`
+Depending on your OS, in this guide I use OSX. if you are using OSX, open `~/.bash_profile` and put this path. If you are on linux, put on `~/.bashrc`
 
 <!--more-->
 
