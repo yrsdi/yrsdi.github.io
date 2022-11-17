@@ -80,15 +80,15 @@ UTILS
 -- Rajinikanth
 ```
 
-
-### Install Elixir ###
-
-To install Elixir. First of all is to get plugin for elixir. Copy & paste following command on your terminal
-`asdf plugin-add <name> <git-url>`
+### Install Erlang & Elixir ###
+To install Erlang & Elixir. First think first is to get plugin for erlang & elixir. Copy & paste following command on your terminal
 
 ```
-$ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir
+$ asdf plugin add erlang
+$ asdf plugin add elixir
+
 ```
+
 Make sure plugin that has added in the list
 
 ```
