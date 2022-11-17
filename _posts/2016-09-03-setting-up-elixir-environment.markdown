@@ -20,8 +20,8 @@ In this tutorial, you'll learn how to install specific versions of Erlang/OTP an
 [asdf](https://github.com/asdf-vm/asdf) is a version manager tool that supports various programming languages including Ruby, Node.js, Erlang, Elixir and more. Before install asdf you need to install the curl and git utilities as prerequisites.
 
 ```
-brew install coreutils curl git  # on macOS with Homebrew
-sudo apt install curl git        # on Linux
+$ brew install coreutils curl git  # on macOS with Homebrew
+$ sudo apt install curl git        # on Linux
 
 ```
 After the prerequisites installed, now install the ASDF:
