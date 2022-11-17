@@ -347,6 +347,8 @@ nav li a.active:hover {
 
 .post-title {
 	margin-bottom: 0;
+	font-family: 'Lora', Trebuchet MS, Arial;
+	font-style: italic;
 }
 .post-meta,
 .post-meta a {
