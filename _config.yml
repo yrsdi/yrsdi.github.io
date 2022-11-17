@@ -12,7 +12,7 @@ permalink:        /:categories/:title/
 title:            'YADI ROSADI'
 tagline:          'Programming, Linux and Anything'
 description:      'software development, programming language, open source technology, web development tools'
-url:              http://yrsdi.github.io
+url:              https://www.yadirosadi.com
 
 author:
   name:           'Yadi Rosadi'
