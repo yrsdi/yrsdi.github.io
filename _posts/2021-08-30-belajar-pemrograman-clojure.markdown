@@ -9,8 +9,6 @@ categories:
 - programming
 ---
 
-![](https://i.imgur.com/Af51QU8.png)
-
 ### Sedikit Sejarah Tentang Clojure
 * Nama Clojure berasal dari plesetan konsep pemrograman 'closure', yang menggabungkan huruf C, L, dan J untuk C#, Lisp, dan Java, dimana ke-3 bahasa pemrograman tersebut memiliki pengaruh besar pada desain Clojure.
 * Di buat dan di desain oleh Rich Hickey.
