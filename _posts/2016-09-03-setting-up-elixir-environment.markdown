@@ -24,10 +24,11 @@ $ brew install coreutils curl git  # on macOS with Homebrew
 $ sudo apt install curl git        # on Linux
 
 ```
-After the prerequisites installed, now install the ASDF:
+After the prerequisites installed, now ready to install the ASDF:
 
 ```
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+
 ```
 Depending on your OS, in this guide I use OSX. if you are using OSX, open `~/.bash_profile` and put this path. If you are on linux, put on `~/.bashrc`
 
