@@ -20,7 +20,7 @@ Gleam also integrates with the Erlang ecosystem, allowing Gleam programs to make
 
 To create a Gleam programming project, you will need to install Erlang on your machine. Here are the steps you can follow:
 1. Install [asdf version manager](https://github.com/asdf-vm/asdf)
-2. Install the Erlang runtime environment on your machine. 
+2. Install the Erlang runtime environment on your local machine. 
 3. Install the Gleam compiler by running the following command in your terminal:
   ```
   $ asdf plugin-add gleam
