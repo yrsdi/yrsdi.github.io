@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "Getting Started Gleam Programming Language using asdf"
-date: 2022-12-17 07:00
+date: 2022-12-16 07:00
 comments: true
 categories: 
 - gleam
