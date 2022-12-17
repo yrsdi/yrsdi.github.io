@@ -29,45 +29,45 @@ Some of the key features of Gleam include:
 
 
 To create a Gleam programming project, you will need to install Erlang on your machine. Here are the steps you can follow:
-1. Install [asdf version manager](https://github.com/asdf-vm/asdf)
-2. Install the Erlang runtime environment on your local machine, see my previous [post](https://www.yadirosadi.com/programming/setting-up-elixir-environment/)
-3. Install the Gleam compiler by running the following command in your terminal: 
+* Install [asdf version manager](https://github.com/asdf-vm/asdf)
+* Install the Erlang runtime environment on your local machine, see my previous [post](https://www.yadirosadi.com/programming/setting-up-elixir-environment/)
+* Install the Gleam compiler by running the following command in your terminal: 
   
   ```
   $ asdf plugin-add gleam
   ```
   
-  Check the latest version or version you'll want to install
+* Check the latest version or version you'll want to install
   
   ```
   $ asdf list-all gleam
   ```
   
-  Install gleam
+* Install gleam
   
   ```
   $ asdf install gleam 0.25.3
   ```
   
-  Set version as global
+* Set version as global
   
   ```
   $ gleam asdf global gleam 0.25.3
   ```
   
-  Verify that the Gleam compiler has been installed correctly by running the following command in your terminal:
+* Verify that the Gleam compiler has been installed correctly by running the following command in your terminal:
  
   ```
   $ gleam -V
   ``` 
 
-4. Create a new directory for your Gleam project and navigate to it using the `cd` command. Initialize a new Gleam project by running the following command in your terminal:
+* Create a new directory for your Gleam project and navigate to it using the `cd` command. Initialize a new Gleam project by running the following command in your terminal:
  
  ```
   $ gleam new --name hello_gleam hello-gleam
   ```
-5. Open the `src/hello_gleam.gleam` file in a text editor and start writing your Gleam code.
-6. To build and run your Gleam project, use the following command:
+* Open the `src/hello_gleam.gleam` file in a text editor and start writing your Gleam code.
+* To build and run your Gleam project, use the following command:
   
   ```
   $ gleam build && gleam run
