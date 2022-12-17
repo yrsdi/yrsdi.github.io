@@ -50,13 +50,12 @@ To create a Gleam programming project, you will need to install Erlang on your m
   ```
   $ gleam -V
   ``` 
-  
+
 4. Create a new directory for your Gleam project and navigate to it using the `cd` command. Initialize a new Gleam project by running the following command in your terminal:
  
  ```
   $ gleam new --name hello_gleam hello-gleam
   ```
-  
 5. Open the `src/hello_gleam.gleam` file in a text editor and start writing your Gleam code.
 6. To build and run your Gleam project, use the following command:
   
