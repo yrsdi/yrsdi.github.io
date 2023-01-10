@@ -16,6 +16,8 @@ Bagi teman-teman yang terbiasa di linkungan OSX dan menggunakan homebrew sebagai
 
 Alasan menggunakan homebrew selain flexibelitasnya adalah karena Homebrew dirancang untuk menyediakan fungsionalitas per user, dapat di install di home direktori teman-teman sebagai <i>third-party</i> yang artinya tidak perlu menggunakan `sudo` saat proses instalasi packagenya. Homebrew juga dapat digunakan bersama package manager bawaan dari OS tanpa menimbulkan konflik.
 
+<!--more-->
+
 Dalam tutorial kali ini, akan di jelaskan cara instalasi dan cara menggunakan Homebrew di lingkungan Linux Ubuntu 20.4. Berikut adalah step by stepnya:
 
 1). Buka terminal dan jalankan perintah berikut untuk proses update cache package managers :
