@@ -2,14 +2,13 @@
 published: true
 layout: post
 title: "Install Homebrew di Linux Ubuntu 20.04 LTS"
-date: 2022-12-27 21:00
+date: 2023-01-08 07:00
 comments: true
 categories: 
 - brew
 - ubuntu
 - package manager
 ---
-
 
 [Homebrew](https://docs.brew.sh/) adalah package manager yang awalnya dikembangkan untuk Mac OSX dan menjadi package manager yang populer setalahnya. Homebrew saat ini tidak hanya tersedia di lingkungan OSX tetapi bisa juga di install di Linux dan Windows (WSL).
 
