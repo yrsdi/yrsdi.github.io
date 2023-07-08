@@ -68,4 +68,4 @@ $ brew install tree
 
 ```
 
-Notes: Jika mendapatkan error berikut "permission denied" saat menjalankan perintah brew, coba jalankan sudo chown -R $USER:$USER /home/linuxbrew/.linuxbrew untuk mengubah owner direktori instalasi Homebrew.
+Notes: Jika mendapatkan error berikut "permission denied" saat menjalankan perintah brew, coba jalankan sudo chown -R $USER:$USER /home/linuxbrew/.linuxbrew untuk mengubah owner dari direktori instalasi Homebrew.
