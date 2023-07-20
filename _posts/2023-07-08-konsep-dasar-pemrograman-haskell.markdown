@@ -11,7 +11,7 @@ categories:
 
 Haskell adalah salah satu bahasa pemrograman dengan paradigma fungsional, bahkan mungkin satu-satunya bahasa pemrograman yang fungsional murni.
 
-Pemrograman fungsional berarti pemrograman dilakukan dengan berfokus pada pemetaan fungsi dan evaluasi ekspresi. Pemrograman fungsional didasarkan pada konsep matematis Lambda Calculus, di mana fungsi dianggap sebagai nilai dan tidak ada perubahan status mutabel. Pemrograman fungsional mendorong gaya pemrograman yang deklaratif, tanpa efek samping (side effect), dan berfokus pada komputasi yang didasarkan pada ekspresi matematika. 
+Pemrograman fungsional berarti pemrograman dilakukan dengan berfokus pada pemetaan fungsi dan evaluasi ekspresi. Pemrograman fungsional didasarkan pada konsep matematis *Lambda Calculus*, dimana fungsi dianggap sebagai nilai dan tidak ada perubahan status *mutabel*. Pemrograman fungsional mendorong gaya pemrograman yang deklaratif, tanpa efek samping (*side effect*), dan berfokus pada komputasi yang didasarkan pada ekspresi matematika. 
 
 Ciri dan konsep dasarnya :
 
@@ -23,7 +23,7 @@ Ciri dan konsep dasarnya :
 	Dalam Haskell, setiap ekspresi dan fungsi memiliki tipe yang ditentukan secara statis, yang berarti tipe tersebut ditentukan sebelum program dijalankan dan tetap konsisten sepanjang eksekusi program. Pemeriksaan tipe dilakukan secara statis pada saat kompilasi, yang memungkinkan banyak kesalahan terdeteksi sebelum program dieksekusi.
 
 	**1.2 Tipe yang Kuat**:
-	
+
 	Tipe yang kuat dalam Haskell berarti bahwa sistem tipe menerapkan aturan yang ketat untuk memastikan kesesuaian tipe dalam operasi dan ekspresi. Ini berarti tidak diperbolehkan operasi yang tidak valid antara tipe yang berbeda, dan kesalahan tipe biasanya terdeteksi selama kompilasi. Tipe yang kuat membantu dalam mencegah kesalahan yang umum terkait tipe dan meningkatkan keamanan dan keandalan program.
 
 	**Kelebihan Tipe Statis yang Kuat**:
@@ -33,7 +33,7 @@ Ciri dan konsep dasarnya :
 	- Pembacaan kode yang lebih jelas: 
 	  Tipe statis yang kuat memungkinkan pemrogram untuk membaca kode dengan jelas dan memahami tipe data yang terlibat dalam operasi dan ekspresi.
 	- Pemeliharaan kode yang mudah: 
-		  Dengan tipe statis yang kuat, perubahan dalam kode yang melibatkan tipe dapat ditemukan secara langsung dan memaksa pengembang untuk memperbaiki kesesuaian tipe, sehingga memudahkan pemeliharaan kode dan refaktorisasi.
+	  Dengan tipe statis yang kuat, perubahan dalam kode yang melibatkan tipe dapat ditemukan secara langsung dan memaksa pengembang untuk memperbaiki kesesuaian tipe, sehingga memudahkan pemeliharaan kode dan refaktorisasi.
 		
 	Contoh Penggunaan Tipe Statis yang Kuat di Haskell:
 
@@ -53,15 +53,34 @@ Ciri dan konsep dasarnya :
 	-- result4 = square "2"  -- Kesalahan tipe: Argumen harus bertipe Double, bukan String
 	```
   
-   Dalam contoh di atas, kita mendefinisikan dua fungsi: add dan square. Fungsi add menerima dua argumen bertipe Int dan mengembalikan hasil penjumlahan mereka. Fungsi square menerima argumen bertipe Double dan mengembalikan hasil kuadratnya.
+   Dalam contoh di atas, kita mendefinisikan dua fungsi: `add` dan `square`. Fungsi `add` menerima dua argumen bertipe `Int` dan mengembalikan hasil penjumlahan mereka. Fungsi `square` menerima argumen bertipe `Double` dan mengembalikan hasil kuadratnya.
 
    Ketika kita memanggil fungsi-fungsi ini dengan argumen yang tepat, seperti `add 5 3` atau `square 2.5`, tidak ada kesalahan tipe yang terjadi dan program dapat dikompilasi dan dijalankan dengan benar.
 
    Namun, jika kita mencoba memanggil fungsi dengan argumen yang tidak sesuai dengan tipe yang diharapkan, seperti `add 5.0 3` atau `square "2"`, kesalahan tipe terdeteksi saat kompilasi. Ini menunjukkan kekuatan tipe statis yang kuat dalam Haskell dalam mencegah kesalahan tipe yang umum.
 
-2. Evaluasi Lazim (Lazy Evaluation):
+2. Lazy Evaluation:
 
    Haskell menggunakan evaluasi lazim, yang berarti ekspresi dievaluasi hanya saat nilainya diperlukan. Ini berbeda dari evaluasi eagerness yang umumnya digunakan dalam bahasa pemrograman imperatif. Evaluasi lazim memungkinkan evaluasi yang tertunda dan memungkinkan pemrogram untuk mengoperasikan dengan struktur data tak terbatas atau tak terhingga secara efisien.
+
+   ```
+   lazyAdd :: Int -> Int -> Int
+   lazyAdd x y = x + y
+
+   main :: IO ()
+   main = do
+     let result = lazyAdd (2 + 3) (4 * 5)
+     putStrLn $ "Result: " ++ show result
+```
+	Dalam contoh tersebut, kita memiliki fungsi `lazyAdd` yang melakukan penjumlahan dua bilangan. Namun, perhatikan bahwa argumen `x` dan `y` memiliki ekspresi matematika yang rumit.
+
+	Pada baris `let result = lazyAdd (2 + 3) (4 * 5)`, kita sebenarnya sedang melakukan evaluasi lazim. Meskipun kita bisa langsung mengevaluasi ekspresi `(2 + 3)` dan `(4 * 5)` secara eager (cepat), Haskell menggunakan evaluasi lazim untuk menunda evaluasi ekspresi ini sampai benar-benar diperlukan.
+
+	Ketika kita mencetak result ke layar dengan menggunakan `putStrLn`, evaluasi ekspresi `(2 + 3)` dan `(4 * 5)` akan dilakukan, dan hasilnya akan dijumlahkan oleh fungsi `lazyAdd`.
+
+	Ealuasi ekspresi (2 + 3) dan (4 * 5) ditunda sampai saat mereka benar-benar diperlukan dalam evaluasi lazyAdd. Ini menunjukkan evaluasi lazim dalam aksi, di mana ekspresi dievaluasi hanya saat nilai mereka benar-benar diperlukan.
+
+	Contoh sederhana ini menunjukkan bagaimana evaluasi lazim dalam Haskell memungkinkan penundaan evaluasi dan mengoptimalkan kinerja dengan tidak mengevaluasi ekspresi yang tidak perlu. Evaluasi lazim memungkinkan kita untuk menulis kode yang lebih ekspresif dan efisien, terutama saat berurusan dengan ekspresi yang kompleks atau mahal secara komputasi.
 
 3. Inferensi Tipe (Type Inference):
 
