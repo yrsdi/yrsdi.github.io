@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "Navigasi jadi lebih mudah dan cepat menggunakan perintah pushd, popd dan dirs di Linux."
-date: 2023-07-20 19:46
+date: 2023-07-19 19:46
 comments: true
 categories: 
 - Linux
