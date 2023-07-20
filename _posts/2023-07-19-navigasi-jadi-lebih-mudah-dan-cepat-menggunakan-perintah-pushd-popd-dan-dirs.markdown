@@ -13,8 +13,9 @@ categories:
 
 Bernavigasi di sistem file Linux dengan efisien adalah kunci bagi pengguna pemula maupun berpengalaman. Perintah bawaan "`pushd`," "`popd`," dan "`dirs`" menyediakan alat bantu kuat untuk menyederhanakan navigasi direktori dan mempermudah alur kerja. Dalam artikel ini, kita akan menjelajahi fungsionalitas perintah ini, bagaimana cara kerjanya secara bersama-sama, dan skenario praktis di mana mereka dapat meningkatkan produktivitas secara signifikan.
 
-1. Pushd:
+<!--more-->
 
+#### Pushd:
 Perintah "`pushd`" adalah singkatan dari "push directory," dan tujuan utamanya adalah mengubah direktori sambil tetap menjaga tumpukan direktori. Saat "`pushd`" digunakan, ia akan beralih ke direktori yang ditentukan dan mendorong direktori saat ini ke dalam tumpukan. Ini memungkinkan pengguna dengan mudah kembali ke direktori sebelumnya dengan "`popd`" atau beralih antara beberapa direktori dengan mudah.
 
 Penggunaan:
@@ -25,8 +26,7 @@ pushd /path/ke/direktori
 ```
 Setelah menjalankan perintah ini, Anda akan berpindah ke direktori yang ditentukan, dan direktori sebelumnya akan disimpan dalam tumpukan direktori.
 
-2. Popd:
-
+#### Popd:
 Perintah "`popd`" melengkapi "`pushd`" dengan memungkinkan pengguna untuk kembali ke direktori sebelumnya dalam tumpukan. Ketika "`popd`" dipanggil, ia menghapus direktori teratas dari tumpukan dan mengubah direktori saat ini menjadi direktori teratas baru.
 
 Penggunaan:
@@ -37,8 +37,7 @@ popd
 ```
 Perintah ini akan mengubah direktori saat ini kembali ke direktori yang berada di bagian atas tumpukan.
 
-3. Dirs:
-
+#### Dirs:
 Perintah "`dirs`" menyediakan cara sederhana untuk melihat tumpukan direktori. Perintah ini menampilkan daftar direktori yang disimpan dalam tumpukan, menunjukkan direktori teratas dengan tanda "+" dan daftar direktori sesuai urutan penambahan ke dalam tumpukan.
 
 Penggunaan:
@@ -49,7 +48,7 @@ dirs
 ```
 Keluaran akan menampilkan daftar direktori dalam tumpukan, memungkinkan Anda melihat riwayat navigasi dengan sekilas.
 
-4. Contoh Praktis:
+#### Contoh Praktis:
 
 a. Beralih antara Dua Direktori:
 Gabungan "`pushd`" dan "`popd`" sangat berguna ketika berpindah bolak-balik antara dua direktori. Misalnya:
