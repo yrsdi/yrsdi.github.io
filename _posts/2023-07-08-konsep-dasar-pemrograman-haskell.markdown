@@ -9,22 +9,22 @@ categories:
 - haskell
 ---
 
-Haskell adalah salah satu bahasa pemrograman dengan paradigma fungsional, bahkan mungkin satu-satunya bahasa pemrograman yang fungsional murni.
+Haskell adalah salah satu bahasa pemrograman dengan paradigma fungsional, bahkan mungkin satu-satunya bahasa pemrograman yang murni fungsional.
 
 Pemrograman fungsional berarti pemrograman dilakukan dengan berfokus pada pemetaan fungsi dan evaluasi ekspresi. Pemrograman fungsional didasarkan pada konsep matematis *Lambda Calculus*, dimana fungsi dianggap sebagai nilai dan tidak ada perubahan status *mutabel*. Pemrograman fungsional mendorong gaya pemrograman yang deklaratif, tanpa efek samping (*side effect*), dan berfokus pada komputasi yang didasarkan pada ekspresi matematika. 
 
 Ciri dan konsep dasarnya :
 
-1. Powerfull Strong Static Typing:
+1. **Powerfull Strong Static Typing**:
 
-   Hal ini mengacu pada sistem tipe yang ketat dan tegas yang diterapkan pada semua ekspresi dan fungsi dalam bahasa tersebut. Berikut adalah penjelasan detail mengenai konsep ini beserta contohnya:
+   Hal ini mengacu pada tipe sistem yang ketat dan tegas yang diterapkan pada semua ekspresi dan fungsi dalam bahasa tersebut. Berikut adalah penjelasan detail mengenai konsep ini beserta contohnya:
 
 	**1.1 Tipe Statis**:
 	Dalam Haskell, setiap ekspresi dan fungsi memiliki tipe yang ditentukan secara statis, yang berarti tipe tersebut ditentukan sebelum program dijalankan dan tetap konsisten sepanjang eksekusi program. Pemeriksaan tipe dilakukan secara statis pada saat kompilasi, yang memungkinkan banyak kesalahan terdeteksi sebelum program dieksekusi.
 
 	**1.2 Tipe yang Kuat**:
 
-	Tipe yang kuat dalam Haskell berarti bahwa sistem tipe menerapkan aturan yang ketat untuk memastikan kesesuaian tipe dalam operasi dan ekspresi. Ini berarti tidak diperbolehkan operasi yang tidak valid antara tipe yang berbeda, dan kesalahan tipe biasanya terdeteksi selama kompilasi. Tipe yang kuat membantu dalam mencegah kesalahan yang umum terkait tipe dan meningkatkan keamanan dan keandalan program.
+	Tipe yang kuat dalam Haskell berarti bahwa tipe sistem menerapkan aturan yang ketat untuk memastikan kesesuaian tipe dalam operasi dan ekspresi. Ini berarti tidak diperbolehkan operasi yang tidak valid antara tipe yang berbeda, dan kesalahan tipe biasanya terdeteksi selama kompilasi. Tipe yang kuat membantu dalam mencegah kesalahan yang umum terkait tipe dan meningkatkan keamanan dan keandalan program.
 
 	**Kelebihan Tipe Statis yang Kuat**:
 
@@ -61,7 +61,7 @@ Ciri dan konsep dasarnya :
 
 2. Lazy Evaluation:
 
-   Haskell menggunakan evaluasi lazim, yang berarti ekspresi dievaluasi hanya saat nilainya diperlukan. Ini berbeda dari evaluasi eagerness yang umumnya digunakan dalam bahasa pemrograman imperatif. Evaluasi lazim memungkinkan evaluasi yang tertunda dan memungkinkan pemrogram untuk mengoperasikan dengan struktur data tak terbatas atau tak terhingga secara efisien.
+   Hal ini berarti ekspresi dievaluasi hanya saat nilainya diperlukan. Ini berbeda dari evaluasi *eagerness* yang umumnya digunakan dalam bahasa pemrograman imperatif. *Lazy Evaluation* memungkinkan evaluasi yang tertunda dan memungkinkan pemrogram untuk mengoperasikan dengan struktur data tak terbatas atau tak terhingga secara efisien.
 
    ```
    lazyAdd :: Int -> Int -> Int
@@ -74,17 +74,17 @@ Ciri dan konsep dasarnya :
 ```
 	Dalam contoh tersebut, kita memiliki fungsi `lazyAdd` yang melakukan penjumlahan dua bilangan. Namun, perhatikan bahwa argumen `x` dan `y` memiliki ekspresi matematika yang rumit.
 
-	Pada baris `let result = lazyAdd (2 + 3) (4 * 5)`, kita sebenarnya sedang melakukan evaluasi lazim. Meskipun kita bisa langsung mengevaluasi ekspresi `(2 + 3)` dan `(4 * 5)` secara eager (cepat), Haskell menggunakan evaluasi lazim untuk menunda evaluasi ekspresi ini sampai benar-benar diperlukan.
+	Pada baris `let result = lazyAdd (2 + 3) (4 * 5)`, kita sebenarnya sedang melakukan *Lazy Evaluation*. Meskipun kita bisa langsung mengevaluasi ekspresi `(2 + 3)` dan `(4 * 5)` secara eager (cepat), Haskell menggunakan *Lazy Evaluation* untuk menunda evaluasi ekspresi ini sampai benar-benar diperlukan.
 
 	Ketika kita mencetak result ke layar dengan menggunakan `putStrLn`, evaluasi ekspresi `(2 + 3)` dan `(4 * 5)` akan dilakukan, dan hasilnya akan dijumlahkan oleh fungsi `lazyAdd`.
 
-	Ealuasi ekspresi (2 + 3) dan (4 * 5) ditunda sampai saat mereka benar-benar diperlukan dalam evaluasi lazyAdd. Ini menunjukkan evaluasi lazim dalam aksi, di mana ekspresi dievaluasi hanya saat nilai mereka benar-benar diperlukan.
+	Ealuasi ekspresi (2 + 3) dan (4 * 5) ditunda sampai saat mereka benar-benar diperlukan dalam evaluasi lazyAdd. Ini menunjukkan *Lazy Evaluation* dalam aksi, dimana ekspresi dievaluasi hanya saat nilai mereka benar-benar diperlukan.
 
-	Contoh sederhana ini menunjukkan bagaimana evaluasi lazim dalam Haskell memungkinkan penundaan evaluasi dan mengoptimalkan kinerja dengan tidak mengevaluasi ekspresi yang tidak perlu. Evaluasi lazim memungkinkan kita untuk menulis kode yang lebih ekspresif dan efisien, terutama saat berurusan dengan ekspresi yang kompleks atau mahal secara komputasi.
+	Contoh sederhana ini menunjukkan bagaimana *Lazy Evaluation* dalam Haskell memungkinkan penundaan evaluasi dan mengoptimalkan kinerja dengan tidak mengevaluasi ekspresi yang tidak perlu. *Lazy Evaluation* memungkinkan kita untuk menulis kode yang lebih ekspresif dan efisien, terutama saat berurusan dengan ekspresi yang kompleks atau mahal secara komputasi.
 
-3. Inferensi Tipe (Type Inference):
+3. Type Inference:
 
-   Haskell memiliki sistem tipe yang kuat dan statis. Setiap ekspresi dan fungsi di Haskell memiliki tipe yang dideklarasikan sebelumnya. Haskell mendukung inferensi tipe, yang memungkinkan sistem tipe untuk secara otomatis menentukan tipe yang tepat untuk ekspresi yang diberikan. Haskell juga mendukung tipe polimorfik, yang memungkinkan kita untuk menulis kode yang berlaku untuk berbagai tipe data.
+   Haskell memiliki sistem tipe yang kuat dan statis. Setiap ekspresi dan fungsi di Haskell memiliki tipe yang dideklarasikan sebelumnya. Haskell mendukung *Type Inference*, yang memungkinkan tipe sistem untuk secara otomatis menentukan tipe yang tepat untuk ekspresi yang diberikan. Haskell juga mendukung tipe *polimorfik*, yang memungkinkan kita untuk menulis kode yang berlaku untuk berbagai tipe data.
 
 4. Pola Correspondence dan Matching:
 
