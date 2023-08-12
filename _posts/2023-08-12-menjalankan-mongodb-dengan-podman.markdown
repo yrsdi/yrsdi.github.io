@@ -91,4 +91,10 @@ $ sudo podman rm mongo_podman
 $ sudo podman run -dt --name mongo_podman_auth -p 27017:27017 -v '/home/yrsdi/mongodb_container/data:/data/db:Z' docker.io/library/mongo:latest --auth
 
 ```
+- Kemudian kalian coba testing untuk login mongodb container
+
+```
+$ sudo podman exec -it mongo_podman_auth mongosh -u "root" -p "root$1234"
+
+```
 
