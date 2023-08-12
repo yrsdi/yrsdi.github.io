@@ -16,27 +16,27 @@ Untuk manjalankan Mongodb dengan Podman pastikan anda sudah menginstall [podman]
 1. Ambil *Images* yang paling update 
 
 ```
-sudo podman pull mongo
+$ sudo podman pull mongo
 
 ```
 2. Pastikan *Images* sudah didapatkan
 
 ```
-sudo podman image ls
+$ sudo podman image ls
 
 ```
 
 3. Terlebih dulu buatlah *directory* untuk menyimpan data, *in case* kalian men-delete container, kalian masih mendapati datanya tersimpan.
 
 ```
-sudo mkdir ~/mongodb_container/data && cd data
+$ sudo mkdir ~/mongodb_container/data && cd data
 
 ```
 
 4. Buat *MongoDB Instance* tanpa *Authentication*
 
 ```
-sudo podman run -dt --name mongo_podman -p 27017:27017 -v '/home/yrsdi/mongodb_container/data:/data/db:Z' docker.io/library/mongo:latest
+$ sudo podman run -dt --name mongo_podman -p 27017:27017 -v '/home/yrsdi/mongodb_container/data:/data/db:Z' docker.io/library/mongo:latest
 
 ```
 
@@ -48,7 +48,7 @@ sudo podman run -dt --name mongo_podman -p 27017:27017 -v '/home/yrsdi/mongodb_c
 5. Membuat koneksi ke MongoDB container dan membuat `root` user
 
 ```
-sudo podman exec -it mongo_podman mongosh
+$ sudo podman exec -it mongo_podman mongosh
 ```
 
 - menampilkan database
@@ -72,7 +72,7 @@ Successfully added user: { "user" : "root", "roles" : [ "root" ] }
 6. Delete container dan buat kembali dengan otenkikasi
 
 ```
-sudo podman ps
+$ sudo podman ps
 
 CONTAINER ID  IMAGE                                 COMMAND     CREATED      STATUS          PORTS                     NAMES
 3c17652400g4  docker.io/library/mongo:latest                  3 hours ago  Up 3 hours ago  0.0.0.0:27017->27017/tcp  mongo_podman
@@ -88,7 +88,7 @@ $ sudo podman rm mongo_podman
 - Buat kembali container dengan otentikasi
 
 ```
-sudo podman run -dt --name mongo_podman_auth -p 27017:27017 -v '/home/yrsdi/mongodb_container/data:/data/db:Z' docker.io/library/mongo:latest --auth
+$ sudo podman run -dt --name mongo_podman_auth -p 27017:27017 -v '/home/yrsdi/mongodb_container/data:/data/db:Z' docker.io/library/mongo:latest --auth
 
 ```
 
