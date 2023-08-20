@@ -12,7 +12,7 @@ categories:
 
 Programming languages serve as the backbone of the digital world, enabling us to create complex software systems, applications, and tools. They provide the means to communicate with computers and instruct them to perform specific tasks. However, beyond their utilitarian role, programming languages hold distinct perspectives that shape their purposes and applications. In this article, we'll delve into the perspectives of programming languages and explore how they can be classified based on their functions and benefits.
 
-[The Perspective of Programming Language (in my point of view)](https://www.yadirosadi.com/images/uploads/2023/prepective_of_programming.png)
+[![The Perspective of Programming Language (in my point of view)](https://www.yadirosadi.com/images/uploads/2023/prepective_of_programming.png)](https://www.yadirosadi.com/images/uploads/2023/prepective_of_programming.png)
 
 <!--more-->
 
