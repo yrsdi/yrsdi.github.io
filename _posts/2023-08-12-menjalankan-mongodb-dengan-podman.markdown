@@ -13,6 +13,9 @@ categories:
 
 Untuk manjalankan Mongodb dengan Podman pastikan kalian sudah menginstall [podman](https://podman.io/docs/installation). Berikut adalah langkah-langkahnya :
 
+
+[![Menjalankan MongoDB dengan Podman](https://www.yadirosadi.com/images/uploads/2023/podman-logo.png)]
+
 <!--more-->
 ### 1. Ambil *Images* yang paling update 
 
