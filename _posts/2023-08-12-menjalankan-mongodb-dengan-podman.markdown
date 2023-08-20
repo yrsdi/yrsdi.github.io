@@ -14,25 +14,25 @@ categories:
 Untuk manjalankan Mongodb dengan Podman pastikan kalian sudah menginstall [podman](https://podman.io/docs/installation). Berikut adalah langkah-langkahnya :
 
 <!--more-->
-1. Ambil *Images* yang paling update 
+### 1. Ambil *Images* yang paling update 
 
 ```
 $ sudo podman pull mongo
 
 ```
-2. Pastikan *Images* sudah didapatkan
+### 2. Pastikan *Images* sudah didapatkan
 
 ```
 $ sudo podman image ls
 
 ```
-3. Terlebih dulu buatlah *directory* untuk menyimpan data, *in case* kalian men-delete container, kalian masih mendapati datanya tersimpan.
+### 3. Terlebih dulu buatlah *directory* untuk menyimpan data, *in case* kalian men-delete container, kalian masih mendapati datanya tersimpan.
 
 ```
 $ sudo mkdir ~/mongodb_container/data && cd data
 
 ```
-4. Buat *MongoDB Instance* tanpa *Authentication*
+### 4. Buat *MongoDB Instance* tanpa *Authentication*
 
 ```
 $ sudo podman run -dt --name mongo_podman -p 27017:27017 -v '/home/yrsdi/mongodb_container/data:/data/db:Z' docker.io/library/mongo:latest
@@ -44,7 +44,7 @@ $ sudo podman run -dt --name mongo_podman -p 27017:27017 -v '/home/yrsdi/mongodb
 * -p 27017:27017: *mapping* `port 27017` ke *host* `port 27017` dalam *container*
 * -v : membuat data penampung yang digunakan oleh container
 
-5. Membuat koneksi ke MongoDB container dan membuat `root` user
+### 5. Membuat koneksi ke MongoDB container dan membuat `root` user
 
 ```
 $ sudo podman exec -it mongo_podman mongosh
@@ -68,7 +68,7 @@ local   0.000GB
 Successfully added user: { "user" : "root", "roles" : [ "root" ] }
 
 ```
-6. Delete container dan buat kembali dengan otenkikasi
+### 6. Delete container dan buat kembali dengan otenkikasi
 
 ```
 $ sudo podman ps
