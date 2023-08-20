@@ -14,7 +14,6 @@ categories:
 Untuk manjalankan Mongodb dengan Podman pastikan kalian sudah menginstall [podman](https://podman.io/docs/installation). Berikut adalah langkah-langkahnya :
 
 <!--more-->
-
 1. Ambil *Images* yang paling update 
 
 ```
@@ -27,14 +26,12 @@ $ sudo podman pull mongo
 $ sudo podman image ls
 
 ```
-
 3. Terlebih dulu buatlah *directory* untuk menyimpan data, *in case* kalian men-delete container, kalian masih mendapati datanya tersimpan.
 
 ```
 $ sudo mkdir ~/mongodb_container/data && cd data
 
 ```
-
 4. Buat *MongoDB Instance* tanpa *Authentication*
 
 ```
@@ -99,4 +96,3 @@ $ sudo podman run -dt --name mongo_podman_auth -p 27017:27017 -v '/home/yrsdi/mo
 $ sudo podman exec -it mongo_podman_auth mongosh -u "root" -p "root$1234"
 
 ```
-
