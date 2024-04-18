@@ -34,7 +34,7 @@ gems:
 paginate:         7
 
 # Google Analytics
-#google_analytics_tracking_id: UA-36102948-1
+google_analytics_tracking_id: G-7SQKGDVFRT
 
 # Facebook Comments
 #facebook_appid: 269506799827290
