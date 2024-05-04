@@ -23,13 +23,13 @@ Adapun persyarat awal yang perlu dipersiapkan sebelum install python, pastikan *
 ### 1. Install *Package*
 	
 ```
-	   sudo apt install git
-	   sudo apt install curl
-	   sudo apt-get install build-essential
-	   sudo apt install python3-openssl
-	   sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
-    libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
-    xz-utils tk-dev libffi-dev liblzma-dev 
+sudo apt install git
+sudo apt install curl
+sudo apt-get install build-essential
+sudo apt install python3-openssl
+sudo apt install -y libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev 
 ```
 
 ### 2. Install `pyenv`
@@ -38,53 +38,54 @@ Adapun persyarat awal yang perlu dipersiapkan sebelum install python, pastikan *
 
 Tambahkan code berikut diakhir baris `$HOME/.bashrc`
 ```
-   	  export PYENV_ROOT="$HOME/.pyenv"
-	  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-	  eval "$(pyenv init -)"
-	  eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 ```
 Reload terminal dengan command `bash` atau tutup dan open kembali untuk me-*refresh* perubahan yg sudah ditambakan sebelumnya. Seharusnya setelah itu anda bisa menjalankan *command* `penv` di terminal anda. 
 
 ```
-	  yardi@X230:~$ pyenv 
-		pyenv 2.4.0
-		Usage: pyenv <command> [<args>]
-		Some useful pyenv commands are:
-		   activate    Activate virtual environment
-		   commands    List all available pyenv commands
-		   deactivate   Deactivate virtual environment
-		   doctor      Verify pyenv installation and development tools to build pythons.
-		   exec        Run an executable with the selected Python version
-		   global      Set or show the global Python version(s)
-		   help        Display help for a command
-		   hooks       List hook scripts for a given pyenv command
-		   init        Configure the shell environment for pyenv
-		   install     Install a Python version using python-build
-		   latest      Print the latest installed or known version with the given prefix
-		   local       Set or show the local application-specific Python version(s)
-		   prefix      Display prefixes for Python versions
-		   rehash      Rehash pyenv shims (run this after installing executables)
-		   root        Display the root directory where versions and shims are kept
-		   shell       Set or show the shell-specific Python version
-		   shims       List existing pyenv shims
-		   uninstall   Uninstall Python versions
-		   update      Update pyenv, its plugins including the list of available versions
-		   --version   Display the version of pyenv
-		   version     Show the current Python version(s) and its origin
-		   version-file   Detect the file that sets the current pyenv version
-		   version-name   Show the current Python version
-		   version-origin   Explain how the current Python version is set
-		   versions    List all Python versions available to pyenv
-		   virtualenv   Create a Python virtualenv using the pyenv-virtualenv plugin
-		   virtualenv-delete   Uninstall a specific Python virtualenv
-		   virtualenv-init   Configure the shell environment for pyenv-virtualenv
-		   virtualenv-prefix   Display real_prefix for a Python virtualenv version
-		   virtualenvs   List all Python virtualenvs found in `$PYENV_ROOT/versions/*'.
-		   whence      List all Python versions that contain the given executable
-		   which       Display the full path to an executable
+yardi@X230:~$ pyenv 
+pyenv 2.4.0
+Usage: pyenv <command> [<args>]
+Some useful pyenv commands are:
+activate    Activate virtual environment
+commands    List all available pyenv commands
+deactivate   Deactivate virtual environment
+doctor      Verify pyenv installation and development tools to build pythons.
+exec        Run an executable with the selected Python version
+global      Set or show the global Python version(s)
+help        Display help for a command
+hooks       List hook scripts for a given pyenv command
+init        Configure the shell environment for pyenv
+install     Install a Python version using python-build
+latest      Print the latest installed or known version with the given prefix
+local       Set or show the local application-specific Python version(s)
+prefix      Display prefixes for Python versions
+rehash      Rehash pyenv shims (run this after installing executables)
+root        Display the root directory where versions and shims are kept
+shell       Set or show the shell-specific Python version
+shims       List existing pyenv shims
+uninstall   Uninstall Python versions
+update      Update pyenv, its plugins including the list of available versions
+--version   Display the version of pyenv
+version     Show the current Python version(s) and its origin
+version-file   Detect the file that sets the current pyenv version
+version-name   Show the current Python version
+version-origin   Explain how the current Python version is set
+versions    List all Python versions available to pyenv
+virtualenv   Create a Python virtualenv using the pyenv-virtualenv plugin
+virtualenv-delete   Uninstall a specific Python virtualenv
+virtualenv-init   Configure the shell environment for pyenv-virtualenv
+virtualenv-prefix   Display real_prefix for a Python virtualenv version
+virtualenvs   List all Python virtualenvs found in `$PYENV_ROOT/versions/*'.
+whence      List all Python versions that contain the given executable
+which       Display the full path to an executable
 ```
 
 **Commands overview :**
+
 Berikut adalah penjelasan untuk *command* yang akan sering digunakan
 	- pyenv install: To install a new Python version
 	- pyenv update: To update pyenv
