@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "Begini cara yang benar install Python di Ubuntu"
-date: 2024-05-02 08:00
+date: 2024-05-04 08:00
 comments: false
 categories: 
 - programming
