@@ -102,7 +102,7 @@ pyenv-virtualenv: no virtualenv name given.
 ```
 Ini menandakan bahwa *environment* belum dibuat. sebelum kita membuat dan menentukan namanya, Kita perlu menginstall python-nya terlebih dulu. 
 
-## 3. Install Python
+### 3. Install Python
 
 Dengan menggunakan `pyenv` kalian bisa install python dengan beberapa versi yang bisa kita tentukan. Katakan kita akan menginstall versi 3.12.3. 
 
@@ -131,7 +131,7 @@ Katakan kita akan menerapkannya kesemua *environment*
 pyenv global 3.9.7
 ```
 
-## 4. Membuat *Virtual Environment* 
+### 4. Membuat *Virtual Environment* 
 
 Setelah python berhasil di install dengan versi yang telah kita tentukan, kini saatnya untuk membuat sebuah *environment*. Katakan kita ingin membuat untuk kebutuhan testing atau development.
  	
